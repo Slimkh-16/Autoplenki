@@ -1,0 +1,195 @@
+doctype html
+html
+  head
+    include _head
+
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      style.
+        .preloader {display:none !important;}
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper.main-page
+      // header SECTION
+      include _header
+      // header SECTION
+      //page-heading
+      section.page-heading
+        .container
+          span Автопленки будующего
+      //breadcrumbs
+      section.breadcrumbs
+        .container
+          ul
+            li
+              a(href="#") Home
+            li
+              span  Автопленки будующего
+      //about
+      section.blog-all.animated(data-animation="InDown")
+        .container
+          .row
+            .col.l3.s12.blog__aside.right.animated(data-animation="InRight")
+              form.blog__aside-search(action='/', method='post')
+                div
+                  input(type='text', name='search', value='', placeholder='Search')
+                  button(type='submit')
+                    span.fa.fa-search
+              .about-header
+                span Категoрии блога
+              ul.blog__aside-categories-list
+                li
+                  a(href='#') Auto Buying Tips & Advice
+                li
+                  a(href='#') Latest Models News
+                li.m-active
+                  a(href='#') Test Drives
+                li
+                  a(href='#') Video Reviews
+                li
+                  a(href='#') Analysis & Features
+              .about-header
+                span Самые читаемые статьи
+              .popular-post-container
+                .popular-post
+                  a(href="#")
+                    span.popular-post__img
+                      img(src="assets/images/big1.jpg", alt="")
+                    span.popular-post__name 2016 Mercedes-Benz GLE-Class Debuts
+                    span.popular-post__date
+                      span.fa.fa-calendar-o
+                      | 20th May 2015
+                .popular-post
+                  a(href="#")
+                    span.popular-post__img
+                      img(src="assets/images/big1.jpg", alt="")
+                    span.popular-post__name 2016 Mercedes-Benz GLE-Class Debuts
+                    span.popular-post__date
+                      span.fa.fa-calendar-o
+                      | 20th May 2015
+            .col.l9.s12.animated(data-animation="InLeft")
+              .blog__posts-one.animated(data-animation="InDown")
+                .row
+                  .col.m2.s3
+                    .blog__posts-one-share.align-center Поделиться
+                    .blog__posts-one-social
+                      div
+                        a(href='#')
+                          span.fa.fa-google-plus-square
+                        a(href='#')
+                          span.fa.fa-facebook-square
+                      div
+                        a(href='#')
+                          span.fa.fa-twitter-square
+                        a(href='#')
+                          span.fa.fa-pinterest-square
+                  .col.m10.s9
+                    .blog__posts-one-body
+                      .blog__posts-one-body-head
+                        span Redesigned 2016 Nissan Maxima Introduced
+                      .b-blog__posts-one-body-date
+                        span.fa.fa-calendar-o
+                        | 20th May 2015
+                      .blog__posts-one-body-main
+                        .blog__posts-one-body-main-img
+                            img(src='assets/images/blog1.jpg', alt='')
+                        p
+                          | Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligula lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet, diam elementum urna sed tincidunt lacus sapien pulvinar erat. Mauris vulputate mivitae lobortis. Lorem ipsum dolor sit amet consec etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                        a.btn(href='#')
+                          | Читать далее
+                          span.fa.fa-angle-right
+              .blog__posts-one.animated(data-animation="InDown")
+                .row
+                  .col.m2.s3
+                    .blog__posts-one-share.align-center Поделиться
+                    .blog__posts-one-social
+                      div
+                        a(href='#')
+                          span.fa.fa-google-plus-square
+                        a(href='#')
+                          span.fa.fa-facebook-square
+                      div
+                        a(href='#')
+                          span.fa.fa-twitter-square
+                        a(href='#')
+                          span.fa.fa-pinterest-square
+                  .col.m10.s9
+                    .blog__posts-one-body
+                      .blog__posts-one-body-head
+                        span Redesigned 2016 Nissan Maxima Introduced
+                      .b-blog__posts-one-body-date
+                        span.fa.fa-calendar-o
+                        | 20th May 2015
+                      .blog__posts-one-body-main
+                        .blog__posts-one-body-main-img
+                            img(src='assets/images/blog1.jpg', alt='')
+                        p
+                          | Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligula lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet, diam elementum urna sed tincidunt lacus sapien pulvinar erat. Mauris vulputate mivitae lobortis. Lorem ipsum dolor sit amet consec etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                        a.btn(href='#')
+                          | Читать далее
+                          span.fa.fa-angle-right
+              .blog__posts-one.animated(data-animation="InDown")
+                .row
+                  .col.m2.s3
+                    .blog__posts-one-share.align-center Поделиться
+                    .blog__posts-one-social
+                      div
+                        a(href='#')
+                          span.fa.fa-google-plus-square
+                        a(href='#')
+                          span.fa.fa-facebook-square
+                      div
+                        a(href='#')
+                          span.fa.fa-twitter-square
+                        a(href='#')
+                          span.fa.fa-pinterest-square
+                  .col.m10.s9
+                    .blog__posts-one-body
+                      .blog__posts-one-body-head
+                        span Redesigned 2016 Nissan Maxima Introduced
+                      .b-blog__posts-one-body-date
+                        span.fa.fa-calendar-o
+                        | 20th May 2015
+                      .blog__posts-one-body-main
+                        .blog__posts-one-body-main-img
+                            img(src='assets/images/blog1.jpg', alt='')
+                        p
+                          | Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligula lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet, diam elementum urna sed tincidunt lacus sapien pulvinar erat. Mauris vulputate mivitae lobortis. Lorem ipsum dolor sit amet consec etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                        a.btn(href='#')
+                          | Читать далее
+                          span.fa.fa-angle-right
+              .pagination
+                .pagination-cont
+                  a.pagination-left(href='#')
+                    span.fa.fa-angle-left
+                  ul
+                    li.active
+                      span 1
+                    li
+                      a(href='#') 2 
+                    li
+                      a(href='#') 3 
+                    li
+                      a(href='#') 4
+                  a.pagination-right(href='#')
+                    span.fa.fa-angle-right
+
+      .above-footer
+    include _footer

@@ -1,0 +1,193 @@
+footer.footer
+  .container
+    .foot-box
+      .heading-section
+        span Режим работы
+      ul
+        li 
+          b Sales Department
+        li Mon-Sat : 8:00am - 5:00pm
+        li Sunday is closed
+      ul
+        li
+          b Service Department
+        li Mon-Sat : 8:00am - 5:00pm
+        li Sunday is closed
+    .row
+      .col.l9.offset-l3.m12.s12
+        .row
+          .col.m7.s12
+            .foot-nav
+              ul
+                li
+                  a(href="#") Главная
+                li
+                  a(href="#") Товары и услуги
+                li
+                  a(href="#") Товары и услуги
+                li
+                  a(href="#") Блог
+                li
+                  a(href="#") О Компании
+                li
+                  a(href="#") Контакты
+          .col.m5.s12
+            .foot-contact
+              .heading-section
+                span Контакты
+              address
+                span.fa.fa-map-marker
+                | 202 W 7th St, Suite 233 Los Angeles, California 90014 USA
+              ul
+                li
+                  span.fa.fa-phone 
+                  | Phone:
+                  a(href="tel:+18006245462") 1-800- 624-5462
+                li
+                  span.fa.fa-fax 
+                  | FAX:
+                  a(href="tel:+18006245462") 1-800- 624-5462
+                li
+                  span.fa.fa-envelope
+                  | Email:
+                  a(href="mailto:info@domain.com") info@domain.com
+  .b-footer
+    .container
+      .row
+        .col.s4
+          .foot__logo
+              a(href='#')
+                img(src="images/logo-white.svg", alt="")
+          
+        .col.s8
+          .social
+            a(href='#')
+              span.fa.fa-facebook-square
+            a(href='#')
+              span.fa.fa-twitter-square
+            a(href='#')
+              span.fa.fa-google-plus-square
+            a(href='#')
+              span.fa.fa-instagram
+            a(href='#')
+              span.fa.fa-youtube-square
+            a(href='#')
+              span.fa.fa-skype
+        .col.s12
+          p © 2017 Автопленки.
+        
+.go-to-top
+  span.fa.fa-arrow-up
+#modal-thank.modal
+  .modal-content
+    span.modal-action.modal-close.modal-close--top
+      span.icon-ico28
+    .container.align-center
+      .modal-head
+        | Спасибо, Ваша заявка отправлена!
+      .modal-body
+        p Наш менеджер свяжется с Вами в течение 15 минут.
+        span.waves-effect.waves-light.btn.modal-close Закрыть
+#registration.modal
+  .modal-content
+    span.modal-action.modal-close.modal-close--top
+      span.fa.fa-times
+    .container 
+      .modal-head
+        | Зарегистрироваться
+      .modal-body   
+        .contact-form
+          .row
+            form(action="#").js_validate.align-center
+              .col.s12
+                .input-field.required-field(data-error="Поле не заполнено")        
+                  span.label-field  Email*    
+                  input(type="email",required,data-validate="email")
+              .clearfix
+              button(type="submit",data-text="Отправить заявку").btn.btn--black.waves-effect.waves-light Добавить
+#login.modal
+  .modal-content
+    span.modal-action.modal-close.modal-close--top
+      span.fa.fa-times
+    .container 
+      .modal-head
+        | Войти
+      .modal-body   
+        .contact-form
+          .row
+            form(action="#").js_validate.align-center
+              .col.s12
+                .input-field.required-field(data-error="Поле не заполнено")        
+                  span.label-field  Email*    
+                  input(type="email",required,data-validate="email")
+              .col.s12
+                .input-field.required-field(data-error="Поле не заполнено")  
+                  span.label-field  Введите пароль    
+                  input(type="password",required)
+              .clearfix
+              button(type="submit",data-text="Отправить заявку").btn.btn--black.waves-effect.waves-light Добавить
+#add_address.modal
+  .modal-content
+    span.modal-action.modal-close.modal-close--top
+      span.fa.fa-times
+    .container 
+      .modal-head
+        | Добавить адрес
+      .modal-body   
+        .contact-form
+          .row
+            form(action="#").js_validate.align-center
+              .col.l12.s12
+                .input-field.required-field(data-error="Поле не заполнено")        
+                  span.label-field  Город    
+                  input(type="text",required)
+              .col.l8.s12
+                .input-field  
+                  span.label-field  Тип доставки
+                  select(name="")
+                    option(value="",disabled) Выберите способ доставки
+                    option(value="1") Новая почта
+                    option(value="1") Авиалюкс
+                    option(value="1") Укрпочта
+              .col.l4.s12
+                .input-field.required-field(data-error="Поле не заполнено")        
+                  span.label-field  Отделение    
+                  input(type="text",required)
+              .col.l12.s12
+                .input-field.required-field(data-error="Поле не заполнено")        
+                  span.label-field  Улица    
+                  input(type="text",required)
+              .col.l12.s12
+                .input-field.required-field(data-error="Поле не заполнено")        
+                  span.label-field  Дом    
+                  input(type="text",required)
+              .col.l12.s12
+                .input-field.required-field(data-error="Поле не заполнено")        
+                  span.label-field  Квартира    
+                  input(type="text",required)
+              .clearfix
+              button(type="submit",data-text="Отправить заявку").btn.btn--black.waves-effect.waves-light Добавить
+#change-pass.modal
+  .modal-content
+    span.modal-action.modal-close.modal-close--top
+      span.fa.fa-times
+    .container 
+      .modal-head
+        | Изменить пароль
+      .modal-body   
+        .contact-form
+          .row
+            form(action="#").js_validate.align-center
+              .col.l12.s12
+                .input-field.required-field(data-error="Поле не заполнено")  
+                  span.label-field  Введите старый пароль    
+                  input(type="password",required)
+              .col.l12.s12
+                .input-field.required-field(data-error="Поле не заполнено")        
+                  span.label-field  Введите новый пароль    
+                  input(type="password",required)
+              .clearfix
+              button(type="submit",data-text="Отправить заявку").btn.btn--black.waves-effect.waves-light Изменить
+script(type='text/javascript', src='js/all-plugins.min.js')
+script(type='text/javascript', src='http://maps.googleapis.com/maps/api/js?sensor=false')
+script(type='text/javascript', src='js/main.js')

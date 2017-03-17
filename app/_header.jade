@@ -1,0 +1,105 @@
+header.header.clearfix
+  .header-top
+    .container
+      .row
+        .head-area
+          span.fa.fa-map-marker
+          | 202 W 7TH ST, LOS ANGELES, CA 90014
+        .head-area.last
+          span.fa.fa-phone
+          a(href="tel:18006245462")  1-800- 624-5462
+        .right-head
+          .right-head-link
+            a(href="#") 
+              span.fa.fa-shopping-cart
+              | Корзина
+            a(href="#registration").modal-trigger 
+              span.
+              | Регистрация
+            a(href="#login").modal-trigger
+              span.fa.fa-sign-in 
+              | Вход
+            a(href="#").js_search
+              span.fa.fa-search
+              | Поиск
+          .drop-head.currency
+            | Валюта
+            span.dropdown-button( data-activates='dropdown1') USD
+            ul#dropdown1.dropdown-content
+              li
+                a(href='#!') ERO
+              li
+                a(href='#!') RUB
+              li
+                a(href='#!') UAH
+          .drop-head.language
+            | Язык
+            span.dropdown-button( data-activates='dropdown2') RUS
+            ul#dropdown2.dropdown-content
+              li
+                a(href='#!') ENG
+              li
+                a(href='#!') UA
+  .header-bottom
+    .container
+      .logo
+        a(href="#")
+          img(src="images/logo.svg", alt="")
+      span.hamburger--collapse
+        span.hamburger-box
+          span.hamburger-inner
+
+      .head-nav
+        ul
+          li.active
+            span Главная
+          li.with-drop
+            a(href="#") 
+              | Каталог
+            span.fa.fa-caret-down
+            .drop-menu
+              ul
+                li
+                  a(href="#") Автоплёнки
+                li
+                  a(href="#") Архитектурные плёнки
+                li
+                  a(href="#") Рекламные плёнки
+                li
+                  a(href="#") Инструмент и химия
+          li
+            a(href="#") О компании
+          li
+            a(href="#") Блог
+          li
+            a(href="#") Контакты 
+          li.with-drop
+            a(href="#") 
+              | Партнеры
+            span.fa.fa-caret-down
+            .drop-menu
+              ul
+                li
+                  a(href="#") Партнер1
+                li
+                  a(href="#") Партнер2
+                li
+                  a(href="#") Партнер3
+                li
+                  a(href="#") Партнер4
+.search-container
+  .container
+    span.close-search.js_cl_search
+      span.fa.fa-times
+    form(action='#')
+      input.search_input(type='text', placeholder='Поиск...')
+      button(type='submit')
+        span.fa.fa-arrow-right
+      p
+        | Нажмите 
+        b Enter
+        |  для отправки запроса, нажмите 
+        b ESC
+        |  для выхода из поиска.
+
+

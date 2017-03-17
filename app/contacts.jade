@@ -1,0 +1,106 @@
+doctype html
+html
+  head
+    include _head
+
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      style.
+        .preloader {display:none !important;}
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper.main-page
+      // header SECTION
+      include _header
+      // header SECTION
+      //page-heading
+      section.page-heading
+        .container
+          span Контакты
+      //breadcrumbs
+      section.breadcrumbs
+        .container
+          ul
+            li
+              a(href="#") Home
+            li
+              span  Контакты
+      //about
+      section.contact-page
+        .contact-map
+          #map
+        .container
+          .row
+            .col.l6.s12.right.animated(data-animation="InRight")
+              .contact-box
+                .contact-box__head OPENING HOURS
+                .contact-box__body
+                  ul
+                    li
+                      b Sales Department
+                      | Mon-Sat : 8:00am - 5:00pm
+                      br
+                      | Sunday is closed
+                    li
+                      b Service Department
+                      | Mon-Sat : 8:00am - 5:00pm 
+                      br
+                      | Sunday is closed
+              .contact-box
+                .contact-box__head OPENING HOURS
+                .contact-box__body
+                  address
+                    .address-info-main-item
+                      span.fa.fa-home
+                      |                     ADDRESS
+                      | 202 W 7th St, Suite 233 Los Angeles, California 90014 USA
+                    .address-info-main-item
+                      span.fa.fa-phone
+                      |                         PHONE
+                      a(href="tel:18006245462") 1-800- 624-5462
+                    .address-info-main-item
+                      span.fa.fa-fax
+                      |                         FAX
+                      a(href="tel:18006245462") 1-800- 624-5462
+                    .address-info-main-item
+                      span.fa.fa-envelope
+                      |                         EMAIL
+                      a(href="mail:info@domain.com") info@domain.com
+            .col.l6.s12.animated(data-animation="InLeft")
+              .about-header
+                span Контакты
+              .contact-form
+                form(action="#").js_validate
+                  .input-field.required-field(data-error="Поле не заполнено")
+                    span.label-field Имя*
+                    input(type="text",required)
+                  .input-field.required-field(data-error="Поле не заполнено")
+                    span.label-field Email*
+                    input(type="email",required,data-validate="email")
+                  .input-field.required-field(data-error="Поле не заполнено")
+                    span.label-field Телефон*
+                    input(type="tel",required,data-validate="phone")
+                  .input-field
+                    span.label-field Сообщение
+                    textarea.materialize-textarea
+                  button(type="submit").btn.btn--black Отправить  
+            
+      .above-footer
+    include _footer

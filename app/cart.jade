@@ -1,0 +1,157 @@
+doctype html
+html
+  head
+    include _head
+
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      style.
+        .preloader {display:none !important;}
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper.main-page
+      // header SECTION
+      include _header
+      // header SECTION
+
+      //breadcrumbs
+      section.breadcrumbs.breadcrumbs--with-head
+        .container
+          .breadcrumbs-head  Корзина
+          ul
+            li
+              a(href="#") Home
+            li
+              span Корзина
+      //change-product-page
+      section.cart
+        .container
+          .cart-container
+            .cart-container-box
+              .cart-head
+                .cart-row
+                  .cart-col.cart-col--1 Товар
+                  .cart-col.cart-col--2 Кол-во, пог. м.
+                  .cart-col.cart-col--3 Цена за 1 пог. м.
+                  .cart-col.cart-col--4 Скидка
+                  .cart-col.cart-col--6 Цена со скидкой
+                  .cart-col.cart-col--7 Сумма
+                  .cart-col.cart-col--8
+              .cart-body
+                .cart-row
+                  .cart-col.cart-col--1 
+                    a(href="#").cart-col-item
+                      span.cart-col__img
+                        img(src="assets/images/ch1.jpg", alt="")
+                      span.cart-col__txt
+                        | Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+                  .cart-col.cart-col--2 
+                    .quantity-wrap
+                      span.minus-icon.fa.fa-caret-left
+                      input.quantity(type='text',value="1",placeholder="1.5")
+                      span.plus-icon.fa.fa-caret-right
+                  .cart-col.cart-col--3
+                    | 200 грн
+                  .cart-col.cart-col--4
+                    | 50%
+                  .cart-col.cart-col--6
+                    | 200 грн
+                  .cart-col.cart-col--7
+                    span.js_item_total 200
+                    |грн
+                  .cart-col.cart-col--8
+                    span.icon-ico-01.js_remove_item
+                .cart-row
+                  .cart-col.cart-col--1 
+                    a(href="#").cart-col-item
+                      span.cart-col__img
+                        img(src="assets/images/ch1.jpg", alt="")
+                      span.cart-col__txt
+                        | Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+                  .cart-col.cart-col--2 
+                    .quantity-wrap
+                      input.quantity(type='text',value="5.5",placeholder="1.5",disabled)
+                  .cart-col.cart-col--3
+                    | 200 грн
+                  .cart-col.cart-col--4
+                    | 50%
+                  .cart-col.cart-col--6
+                    | 200 грн
+                  .cart-col.cart-col--7
+                    span.js_item_total 200
+                    |грн
+                  .cart-col.cart-col--8
+                    span.icon-ico-01.js_remove_item
+                .cart-row
+                  .cart-col.cart-col--1 
+                    a(href="#").cart-col-item
+                      span.cart-col__img
+                        img(src="assets/images/ch1.jpg", alt="")
+                      span.cart-col__txt
+                        | Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+                  .cart-col.cart-col--2 
+                    .quantity-wrap
+                      span.minus-icon.fa.fa-caret-left
+                      input.quantity(type='text',value="1",placeholder="1.5")
+                      span.plus-icon.fa.fa-caret-right
+                  .cart-col.cart-col--3
+                    | 200 грн
+                  .cart-col.cart-col--4
+                    | 50%
+                  .cart-col.cart-col--6
+                    | 200 грн
+                  .cart-col.cart-col--7
+                    span.js_item_total 200
+                    |грн
+                  .cart-col.cart-col--8
+                    span.icon-ico-01.js_remove_item
+                .cart-row
+                  .cart-col.cart-col--1 
+                    a(href="#").cart-col-item
+                      span.cart-col__img
+                        img(src="assets/images/ch1.jpg", alt="")
+                      span.cart-col__txt
+                        | Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+                  .cart-col.cart-col--2 
+                    .quantity-wrap
+                      span.minus-icon.fa.fa-caret-left
+                      input.quantity(type='text',value="1",placeholder="1.5")
+                      span.plus-icon.fa.fa-caret-right
+                  .cart-col.cart-col--3
+                    | 200 грн
+                  .cart-col.cart-col--4
+                    | 50%
+                  .cart-col.cart-col--6
+                    | 200 грн
+                  .cart-col.cart-col--7
+                    span.js_item_total 200
+                    |грн
+                  .cart-col.cart-col--8
+                    span.icon-ico-01.js_remove_item
+            .cart-container-botom
+              | Итого: &nbsp;
+              span.js_total_price 
+              | грн
+            .clearfix.align-center
+              a(href="#").btn.btn--black Оформить заказ
+
+      //podbor
+      .above-footer
+    include _footer

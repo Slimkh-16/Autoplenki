@@ -1,0 +1,186 @@
+doctype html
+html
+  head
+    include _head
+
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      style.
+        .preloader {display:none !important;}
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper.main-page
+      // header SECTION
+      include _header
+      // header SECTION
+      //page-heading
+      section.page-heading
+        .container
+          span About Us
+      //breadcrumbs
+      section.breadcrumbs
+        .container
+          ul
+            li
+              a(href="#") Home
+            li
+              span About Us
+      //about
+      section.about.animated(data-animation="InDown")
+        .container
+          .row
+            .col.l6.m12.s12
+              .about-header
+                span The Best & the Largest Auto Dealer
+              .about-subhead Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod etg tempor incididunt ut labore dolore magna aliqua
+              p Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam mus etern nunc. Nunc conseq sem velde metus imperdiet lacinia. Aenean vulputate. Donec vene natis leo curabitur at neque ut sapien fusce cursus dapibus ligula Lorem ipsum dolor sitter amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Uit enim ad minim veniami quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat. Duis aute irure dolor in reprehenderit.
+            .col.l6.m12.s12
+              img(src="assets/images/about.jpg", alt="")
+      section.about-more
+        .container
+          .row
+            .col.l6.s12.animated(data-animation="InDown")
+              .heading-section
+                span WHY CHOOSE US
+              p Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus etyd nunc. Nunc consequsem velde metus imperdiet lacinia. Lorem ipsum dolor sit amet sed consectetur adipisicing elit sed do eiusmod.
+              ul
+                li
+                  span.fa.fa-check
+                  | Donec facilisis velit eu est phasellus consequat quis nostrud
+                li
+                  span.fa.fa-check
+                  | Aenean vitae quam. Vivamus et nunc nunc consequat
+                li
+                  span.fa.fa-check
+                  | Sem vel metus imperdiet lacinia enean
+                li
+                  span.fa.fa-check
+                  | Dapibus aliquam augue fusce eleifend quisque tels
+            .col.l6.s12.animated(data-animation="InDown")
+              .heading-section
+                span Вопрос-ответ
+              .accordion-box
+                ul.collapsible(data-collapsible='accordion')
+                  li
+                    .collapsible-header
+                      | Вопрос 1
+                      span.collap-butt
+                        span.fa.fa-chevron-left
+                    .collapsible-body
+                      | In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+                  li
+                    .collapsible-header
+                      | Вопрос 1
+                      span.collap-butt
+                        span.fa.fa-chevron-left
+                    .collapsible-body
+                      | In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+                  li
+                    .collapsible-header
+                      | Вопрос 1
+                      span.collap-butt
+                        span.fa.fa-chevron-left
+                    .collapsible-body
+                      | In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+      section.our-peop
+        .container
+          .align-center
+            .above-heading THE PEOPLE YOU CAN TRUST ON
+            .heading-section.heading-section--2
+              span OUR TEAM MEMBERS
+          .row
+            .col.l3.m6.s12.animated(data-animation="InDown",data-animation-delay="100")
+              .peop-item
+                .peop-item__img
+                  img.img-responsive(src='assets/images/peop.jpg', alt='maria')
+                  .peop-item__social
+                      a(href='#')
+                        span.fa.fa-facebook-square
+                      a(href='#')
+                        span.fa.fa-twitter-square
+                      a(href='#')
+                        span.fa.fa-pinterest-square
+                      a(href='#')
+                        span.fa.fa-google-plus-square
+                .peop-item__title Sales Representative
+                .peop-item__head 
+                  span Maria Susan
+                p
+                  | Owner of AutoClub, started the company
+                  | in 2005. A very hard working person who loves to drive the cars.
+            .col.l3.m6.s12.animated(data-animation="InDown",data-animation-delay="200")
+              .peop-item
+                .peop-item__img
+                  img.img-responsive(src='assets/images/peop.jpg', alt='maria')
+                  .peop-item__social
+                      a(href='#')
+                        span.fa.fa-facebook-square
+                      a(href='#')
+                        span.fa.fa-twitter-square
+                      a(href='#')
+                        span.fa.fa-pinterest-square
+                      a(href='#')
+                        span.fa.fa-google-plus-square
+                .peop-item__title Sales Representative
+                .peop-item__head 
+                  span Maria Susan
+                p
+                  | Owner of AutoClub, started the company
+                  | in 2005. A very hard working person who loves to drive the cars.
+            .col.l3.m6.s12.animated(data-animation="InDown",data-animation-delay="300")
+              .peop-item
+                .peop-item__img
+                  img.img-responsive(src='assets/images/peop.jpg', alt='maria')
+                  .peop-item__social
+                      a(href='#')
+                        span.fa.fa-facebook-square
+                      a(href='#')
+                        span.fa.fa-twitter-square
+                      a(href='#')
+                        span.fa.fa-pinterest-square
+                      a(href='#')
+                        span.fa.fa-google-plus-square
+                .peop-item__title Sales Representative
+                .peop-item__head 
+                  span Maria Susan
+                p
+                  | Owner of AutoClub, started the company
+                  | in 2005. A very hard working person who loves to drive the cars.
+            .col.l3.m6.s12.animated(data-animation="InDown",data-animation-delay="400")
+              .peop-item
+                .peop-item__img
+                  img.img-responsive(src='assets/images/peop.jpg', alt='maria')
+                  .peop-item__social
+                      a(href='#')
+                        span.fa.fa-facebook-square
+                      a(href='#')
+                        span.fa.fa-twitter-square
+                      a(href='#')
+                        span.fa.fa-pinterest-square
+                      a(href='#')
+                        span.fa.fa-google-plus-square
+                .peop-item__title Sales Representative
+                .peop-item__head 
+                  span Maria Susan
+                p
+                  | Owner of AutoClub, started the company
+                  | in 2005. A very hard working person who loves to drive the cars.
+      .above-footer
+    include _footer

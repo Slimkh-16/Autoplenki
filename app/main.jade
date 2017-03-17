@@ -1,0 +1,442 @@
+doctype html
+html
+  head
+    include _head
+
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      style.
+        .preloader {display:none !important;}
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper.main-page
+      // header SECTION
+      include _header
+      // header SECTION
+      // general slider
+      section.general-slider
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              img(src="assets/images/slider1.jpg", alt="")
+              .general-slider-caption(data-swiper-parallax="-300")
+                .slider-caption__head Антигравийная пленка
+                .slider-txt Антигравийная пленка для авто
+                .slider-price MODEL 2015 
+                  span 1200 пог./м.
+                a.btn.btn-slider(href='#')
+                  | Смотреть потробнее
+                  span.fa.fa-angle-right
+            .swiper-slide
+              img(src="assets/images/slider2.jpg", alt="")
+              .general-slider-caption(data-swiper-parallax="-300")
+                .slider-caption__head Антигравийная пленка
+                .slider-txt Антигравийная пленка для авто
+                .slider-price MODEL 2015 
+                  span 1200 пог./м.
+                a.btn.btn-slider(href='#')
+                  | Смотреть потробнее
+                  span.fa.fa-angle-right
+          .swiper-button-prev
+          .swiper-button-next
+      // general slider
+      //section search
+      section.search-box
+        .container
+          .search-box-container.animated(data-animation="InDown")
+            .row
+              .col.l5.s12
+                .search-box__left
+                  .search-form__head Новые автопленки
+                  .search-box-item
+                    a(href="#")
+                      span.search-box-item__img
+                        img(src="http://placehold.it/150x80", alt="")
+                      span.search-box-item__info
+                        | Выкройка 1
+                  .search-box-item
+                    a(href="#")
+                      span.search-box-item__img
+                        img(src="http://placehold.it/150x80", alt="")
+                      span.search-box-item__info
+                        | Выкройка 2
+                  .search-box-item
+                    a(href="#")
+                      span.search-box-item__img
+                        img(src="http://placehold.it/150x80", alt="")
+                      span.search-box-item__info
+                        | Выкройка 3
+                  .align-left.clearfix
+                    a(href="#").search-box__view-all
+                      span.fa.fa-arrow-right
+                      | Смотреть все
+              .col.l7.s12
+
+                .search-form__head Подобрать комплект автопленок
+                form(action="#").search-form.form
+                  p Выберите параметры автомобиля:
+                  .form-field
+                    select.js_change_images
+                      option(value='', disabled='', selected='') Выберите производителя
+                      option(value='1',data-image-category="http://html.templines.com/sokolcov/auto-club/media/270x150/bmw.jpg") Option 1
+                      option(value='2',data-image-category="http://html.templines.com/sokolcov/auto-club/media/270x150/LandRover.jpg") Option 2
+                      option(value='3',data-image-category="http://html.templines.com/sokolcov/auto-club/media/270x150/nissanGT.jpg") Option 3
+                  .form-field
+                    select
+                      option(value='', disabled='', selected='') Выберите модель
+                      option(value='1') Option 1
+                      option(value='2') Option 2
+                      option(value='3') Option 3
+                  .form-field
+                    select
+                      option(value='', disabled='', selected='') Выберите год
+                      option(value='1') Option 1
+                      option(value='2') Option 2
+                      option(value='3') Option 3
+                  button(type="submit").btn.btn--black
+                    | Подобрать
+                .search-form-images
+                  img(src="assets/images/img.jpg", alt="").js_prew_images
+      //section search
+      //hit
+      section.hit-section.animated(data-animation="InDown")
+        .container
+          .heading-section
+            span Хиты продаж
+          .hit-section-slider.slider-with-buttons
+            .swiper-container
+              .swiper-wrapper
+                .swiper-slide
+                  .hit-item
+                    a(href="#")
+                      span.hit-item__img
+                        img(src="http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg", alt="")
+                        .hit-status.hit-status--hit
+                          | hit
+                      span.hit-item__info
+                        span.hit-item__price 101.25$
+                        br
+                        | Антигравийная пленка №567496
+                        .hit-item__detail
+                          | Lorem Ipsum is simply dummy text of the printing and typesetting 
+                .swiper-slide
+                  .hit-item
+                    a(href="#")
+                      span.hit-item__img
+                        img(src="http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg", alt="")
+                        .hit-status.hit-status--new
+                          | new
+                      span.hit-item__info
+                        span.hit-item__price 101.25$
+                        br
+                        | Антигравийная пленка №567496
+                        .hit-item__detail
+                          | Lorem Ipsum is simply dummy text of the printing and typesetting 
+                .swiper-slide
+                  .hit-item
+                    a(href="#")
+                      span.hit-item__img
+                        img(src="http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg", alt="")
+                      span.hit-item__info
+                        span.hit-item__price 101.25$
+                        br
+                        | Антигравийная пленка №567496
+                        .hit-item__detail
+                          | Lorem Ipsum is simply dummy text of the printing and typesetting 
+                .swiper-slide
+                  .hit-item
+                    a(href="#")
+                      span.hit-item__img
+                        img(src="http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg", alt="")
+                        .hit-status.hit-status--new
+                          | new
+                      span.hit-item__info
+                        span.hit-item__price 101.25$
+                        br
+                        | Антигравийная пленка №567496
+                        .hit-item__detail
+                          | Lorem Ipsum is simply dummy text of the printing and typesetting 
+                .swiper-slide
+                  .hit-item
+                    a(href="#")
+                      span.hit-item__img
+                        img(src="http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg", alt="")
+                      span.hit-item__info
+                        span.hit-item__price 101.25$
+                        br
+                        | Антигравийная пленка №567496
+                        .hit-item__detail
+                          | Lorem Ipsum is simply dummy text of the printing and typesetting 
+            .swiper-button-prev
+            .swiper-button-next
+      //hit
+      //why-we
+      section.why-we
+        .container
+          .row
+            .col.l5.offset-l2.m12.s12.animated(data-animation="InLeft")
+              .why-we__text
+                .why-we__head WORLD'S LEADING CAR DEALER
+                .why-we__heading WELCOME TO AUTOCLUB
+                p
+                  | Curabitur libero. Donec facilisis velit eudsl est. Phasellus consequat. Aenean vita quam. Vivamus et nunc. Nunc consequat sem velde metus imperdiet lacinia. Dui estter neque molestie necd dignissim ac hendrerit quis purus. Etiam sit amet vec convallis massa scelerisque mattis. Sed placerat leo nec.
+                p
+                  | Ipsum midne ultrices magn eu tempor quam dolor eustrl sem. Donec quis dolel Donec pede quam placerat alterl tristique faucibus posuere lobortis.
+                ul
+                  li
+                    span.fa.fa-check
+                    | Donec facilisis velit eu est phasellus consequat
+                  li
+                    span.fa.fa-check
+                    | Aenean vitae quam. Vivamus et nunc nunc consequat
+                  li
+                    span.fa.fa-check
+                    | Sem vel metus imperdiet lacinia enean
+                  li
+                    span.fa.fa-check
+                    | Dapibus aliquam augue fusce eleifend quisque tels
+            .col.l5.m12.s12.animated(data-animation="InRight")
+              .why-we__services
+                .row
+                  .col.s6
+                    .why-we__services-auto
+                      .why-we__services-img
+                        span.fa.fa-cab
+                      span AUTO LOANS
+                  .col.s6
+                    .why-we__services-auto
+                      .why-we__services-img
+                        span.fa.fa-male
+                      span Trade-Ins
+                  .col.s12.align-center
+                    span.why-web-welcome__services-circle
+                  .col.s6
+                    .why-we__services-auto
+                      .why-we__services-img
+                        span.fa.fa-book
+                      span Buying guide
+                  .col.s6
+                    .why-we__services-auto
+                      .why-we__services-img
+                        svg#Capa_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='45px', height='45px', viewbox='0 0 612 612', style='enable-background:new 0 0 612 612;', xml:space='preserve')
+                          g
+                            path(d='M257.938,336.072c0,17.355-14.068,31.424-31.423,31.424c-17.354,0-31.422-14.068-31.422-31.424\
+                            c0-17.354,14.068-31.423,31.422-31.423C243.87,304.65,257.938,318.719,257.938,336.072z M385.485,304.65\
+                            c-17.354,0-31.423,14.068-31.423,31.424c0,17.354,14.069,31.422,31.423,31.422c17.354,0,31.424-14.068,31.424-31.422\
+                            C416.908,318.719,402.84,304.65,385.485,304.65z M612,318.557v59.719c0,29.982-24.305,54.287-54.288,54.287h-39.394\
+                            C479.283,540.947,379.604,606.412,306,606.412s-173.283-65.465-212.318-173.85H54.288C24.305,432.562,0,408.258,0,378.275v-59.719\
+                            c0-20.631,11.511-38.573,28.46-47.758c0.569-84.785,25.28-151.002,73.553-196.779C149.895,28.613,218.526,5.588,306,5.588\
+                            c87.474,0,156.105,23.025,203.987,68.43c48.272,45.777,72.982,111.995,73.553,196.779C600.489,279.983,612,297.925,612,318.557z\
+                            M497.099,336.271c0-13.969-0.715-27.094-1.771-39.812c-24.093-22.043-67.832-38.769-123.033-44.984\
+                            c7.248,8.15,13.509,18.871,17.306,32.983c-33.812-26.637-100.181-20.297-150.382-79.905c-2.878-3.329-5.367-6.51-7.519-9.417\
+                            c-0.025-0.035-0.053-0.062-0.078-0.096l0.006,0.002c-8.931-12.078-11.976-19.262-12.146-11.31\
+                            c-1.473,68.513-50.034,121.925-103.958,129.46c-0.341,7.535-0.62,15.143-0.62,23.08c0,28.959,4.729,55.352,12.769,79.137\
+                            c30.29,36.537,80.312,46.854,124.586,49.59c8.219-13.076,26.66-22.205,48.136-22.205c29.117,0,52.72,16.754,52.72,37.424\
+                            c0,20.668-23.604,37.422-52.72,37.422c-22.397,0-41.483-9.93-49.122-23.912c-30.943-1.799-64.959-7.074-95.276-21.391\
+                            C198.631,535.18,264.725,568.41,306,568.41C370.859,568.41,497.099,486.475,497.099,336.271z M550.855,264.269\
+                            C547.4,116.318,462.951,38.162,306,38.162S64.601,116.318,61.145,264.269h20.887c7.637-49.867,23.778-90.878,48.285-122.412\
+                            C169.37,91.609,228.478,66.13,306,66.13c77.522,0,136.63,25.479,175.685,75.727c24.505,31.533,40.647,72.545,48.284,122.412\
+                            H550.855L550.855,264.269z')
+                      span 24/7 support
+
+      //why-we
+      //word
+      section.blog
+        .container
+          .above-heading Блог
+          .heading-section.heading-section--2
+            span Мир автопленок
+          .row
+            .col.l4.m12.s12.animated(data-animation="InDown",data-animation-delay="100")
+              .blog-item
+                .blog-item__img
+                  a(href="#")
+                    img(src="assets/images/blog.jpg", alt="")
+                .blog-item__txt Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequ sem velde metus imperdiet lacinia.
+                a.btn.btn-border(href='#')
+                  | Читать далее
+                  span.fa.fa-angle-right
+            .col.l4.m12.s12.animated(data-animation="InDown",data-animation-delay="200")
+              .blog-item
+                .blog-item__img
+                  a(href="#")
+                    img(src="assets/images/blog.jpg", alt="")
+                .blog-item__txt Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequ sem velde metus imperdiet lacinia.
+                a.btn.btn-border(href='#')
+                  | Читать далее
+                  span.fa.fa-angle-right
+            .col.l4.m12.s12.animated(data-animation="InDown",data-animation-delay="300")
+              .blog-item
+                .blog-item__img
+                  a(href="#")
+                    img(src="assets/images/blog.jpg", alt="")
+                .blog-item__txt Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequ sem velde metus imperdiet lacinia.
+                a.btn.btn-border(href='#')
+                  | Читать далее
+                  span.fa.fa-angle-right
+      //category
+      section.category.animated(data-animation="InDown")
+        .container
+          .align-center
+            .above-heading Категория
+            .heading-section.heading-section--2
+              span Продуктовая линейка
+          .row
+            .col.l3.m4.s5.animated(data-animation="InLeft")
+              .category-nav
+                ul
+                  li.active
+                    span Категория
+                    span.fa.fa-angle-right
+                  li
+                    a(href='#') Категория 2
+                  li
+                    a(href='#') Категория 3
+                  li
+                    a(href='#') Категория 4
+                  li
+                    a(href='#') Категория 5
+                  li
+                    a(href='#') Категория 6
+                  li
+                    a(href='#') Категория 7
+                  li
+                    a(href='#') Категория 8
+            .col.l9.m8.s7.animated(data-animation="InRight")
+              .category-body
+                a(href="#").category-item
+                  span.category-item__img
+                    img(src="assets/images/blog.jpg", alt="")
+                  span Антигравийная плёнка
+                a(href="#").category-item
+                  span.category-item__img
+                    img(src="assets/images/blog.jpg", alt="")
+                  span Виниловая плёнка
+                a(href="#").category-item
+                  span.category-item__img
+                    img(src="assets/images/blog.jpg", alt="")
+                  span Плёнка для тонировки стёкол
+                a(href="#").category-item
+                  span.category-item__img
+                    img(src="assets/images/blog.jpg", alt="")
+                  span Антигравийная плёнка
+                a(href="#").category-item
+                  span.category-item__img
+                    img(src="assets/images/blog.jpg", alt="")
+                  span Виниловая плёнка
+                a(href="#").category-item
+                  span.category-item__img
+                    img(src="assets/images/blog.jpg", alt="")
+                  span Плёнка для тонировки стёкол
+      //our plus
+      section.our-plus.animated(data-animation="InDown")
+        .contfiner
+          .our-plus-item
+            .our-plus-item__icon
+              span.fa.fa-car
+            .our-plus-item__txt
+              | Низкие цены напрямую от производителя
+          .our-plus-item
+            .our-plus-item__icon
+              span.fa.fa-car
+            .our-plus-item__txt
+              | Поддержка клиентов с 9.00 до 19.00
+          .our-plus-item
+            .our-plus-item__icon
+              span.fa.fa-car
+            .our-plus-item__txt
+              | Профессиональные консультации
+          .our-plus-item
+            .our-plus-item__icon
+              span.fa.fa-car
+            .our-plus-item__txt
+              | Оплата при получении
+          .our-plus-item
+            .our-plus-item__icon
+              span.fa.fa-car
+            .our-plus-item__txt
+              | Отправка в день заказа
+          .our-plus-item
+            .our-plus-item__icon
+              span.fa.fa-car
+            .our-plus-item__txt
+              | Безналичный расчёт
+      // feedback section
+      section.feedback.animated(data-animation="InDown")
+        .container
+          .row
+            .col.l4.s12
+              .heading-section 
+                span Подписаться на рассылку
+            .col.l8.s12
+              form.feed-form.js_validate
+                //- .feed-form__block.required-field(data-error="Заполните поле")
+                //-   span.fa.fa-user
+                //-   input(type='text', name='user', value='',required, placeholder='Имя')
+                .feed-form__block.required-field(data-error="Заполните поле")
+                  span.fa.fa-envelope
+                  input(type='email', name='user', value='',required, placeholder='Email',data-validate="email")
+                button.btn.btn-border(type="submit")
+                  | Подписаться
+                  span.fa.fa-angle-right
+      // testimonials
+      section.testimonials.animated(data-animation="InDown")
+        .container
+          .testimonials-slider.slider-with-buttons
+            .swiper-container
+              .swiper-wrapper
+                .swiper-slide
+                  .testimonials-item
+                    .testimonials-item__person
+                      img(src="assets/images/peop.jpg", alt="")
+                    .testimonials-item__head
+                      span Пётр Петро
+                      | , Customer, Ferrari 488 GTB 2 Owner
+                      em "
+                    p
+                      | Donec facilisis velit eust. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequsem
+                      | velde metus imperdiet lacinia.  Nam rutrum congue diam. Vestibulum acda risus eros auctor egestas. Morbids sem magna, viverra quis sollicitudin quis consectetuer quis nec magna.
+                .swiper-slide
+                  .testimonials-item
+                    .testimonials-item__person
+                      img(src="assets/images/peop.jpg", alt="")
+                    .testimonials-item__head
+                      span DONALD BROOKS
+                      | , Customer, Ferrari 488 GTB 2 Owner
+                      em "
+                    p
+                      | Donec facilisis velit eust. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequsem
+                      | velde metus imperdiet lacinia.  Nam rutrum congue diam. Vestibulum acda risus eros auctor egestas. Morbids sem magna, viverra quis sollicitudin quis consectetuer quis nec magna.
+                .swiper-slide
+                  .testimonials-item
+                    .testimonials-item__person
+                      img(src="assets/images/peop.jpg", alt="")
+                    .testimonials-item__head
+                      span DONALD BROOKS
+                      | , Customer, Ferrari 488 GTB 2 Owner
+                      em "
+                    p
+                      | Donec facilisis velit eust. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequsem
+                      | velde metus imperdiet lacinia.  Nam rutrum congue diam. Vestibulum acda risus eros auctor egestas. Morbids sem magna, viverra quis sollicitudin quis consectetuer quis nec magna.
+            .swiper-button-prev
+            .swiper-button-next
+        img(src="assets/images/reviews.jpg", alt="").testimonials-img
+      .above-footer
+    include _footer

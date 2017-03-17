@@ -1,0 +1,104 @@
+.animated {
+  visibility: hidden;
+  opacity: 0;
+}
+.animated.visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@keyframes InLeft{
+    from {transform: translateX(-20px); opacity:0;}
+    to {transform: translateX(0px); opacity:1;}
+}
+@-webkit-keyframes InLeft{
+    from {-webkit-transform: translateX(-20px); opacity:0;}
+    to {-webkit-transform: translateX(0px); opacity:1;}
+}
+@-o-keyframes InLeft{
+    from {-o-transform: translateX(-20px); opacity:0;}
+    to {-o-transform: translateX(0px); opacity:1;}
+}
+@-moz-keyframes InLeft{
+    from {-moz-transform: translateX(-20px); opacity:0;}
+    to {-moz-transform: translateX(0px); opacity:1;}
+}
+.InLeft {
+  -webkit-animation-name: InLeft;
+  -moz-animation-name: InLeft;
+  -o-animation-name: InLeft;
+          animation-name: InLeft;
+}
+@keyframes InRight{
+    from {transform: translateX(20px); opacity:0;}
+    to {transform: translateX(0px); opacity:1;}
+}
+@-webkit-keyframes InRight{
+    from {-webkit-transform: translateX(20px); opacity:0;}
+    to {-webkit-transform: translateX(0px); opacity:1;}
+}
+@-o-keyframes InRight{
+    from {-o-transform: translateX(20px); opacity:0;}
+    to {-o-transform: translateX(0px); opacity:1;}
+}
+@-moz-keyframes InRight{
+    from {-moz-transform: translateX(20px); opacity:0;}
+    to {-moz-transform: translateX(0px); opacity:1;}
+}
+.InRight {
+  -webkit-animation-name: InRight;
+  -moz-animation-name: InRight;
+  -o-animation-name: InRight;
+          animation-name: InRight;
+}
+@keyframes InTop{
+    from {transform: translateY(-20px); opacity:0;}
+    to {transform: translateY(0px); opacity:1;}
+}
+@-webkit-keyframes InTop{
+    from {-webkit-transform: translateY(-20px); opacity:0;}
+    to {-webkit-transform: translateY(0px); opacity:1;}
+}
+@-o-keyframes InTop{
+    from {-o-transform: translateY(-20px); opacity:0;}
+    to {-o-transform: translateY(0px); opacity:1;}
+}
+@-moz-keyframes InTop{
+    from {-moz-transform: translateY(-20px); opacity:0;}
+    to {-moz-transform: translateY(0px); opacity:1;}
+}
+.InTop {
+  -webkit-animation-name: InTop;
+  -moz-animation-name: InTop;
+  -o-animation-name: InTop;
+          animation-name: InTop;
+}
+@keyframes InDown{
+    from {transform: translateY(20px); opacity:0;}
+    to {transform: translateY(0px); opacity:1;}
+}
+@-webkit-keyframes InDown{
+    from {-webkit-transform: translateY(20px); opacity:0;}
+    to {-webkit-transform: translateY(0px); opacity:1;}
+}
+@-o-keyframes InDown{
+    from {-o-transform: translateY(20px); opacity:0;}
+    to {-o-transform: translateY(0px); opacity:1;}
+}
+@-moz-keyframes InDown{
+    from {-moz-transform: translateY(20px); opacity:0;}
+    to {-moz-transform: translateY(0px); opacity:1;}
+}
+.InDown {
+  -webkit-animation-name: InDown;
+  -moz-animation-name: InDown;
+  -o-animation-name: InDown;
+          animation-name: InDown;
+}

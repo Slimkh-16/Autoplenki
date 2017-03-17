@@ -1,0 +1,370 @@
+doctype html
+html
+  head
+    include _head
+
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      style.
+        .preloader {display:none !important;}
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper.main-page
+      // header SECTION
+      include _header
+      // header SECTION
+
+      //breadcrumbs
+      section.breadcrumbs.breadcrumbs--with-head
+        .container
+          .breadcrumbs-head  Личный кабинет
+          ul
+            li
+              a(href="#") Home
+            li
+              span Личный кабинет
+      //cabinet
+      section.cabinet
+        .container
+          .cabinet-nav
+            ul.tabs
+              li.tab
+                a(href='#tab1') Мои данные
+              li.tab
+                a.active(href='#tab2') Данные по доставке
+              li.tab
+                a(href='#tab3') Мои заказы
+        .cabinet-container
+          .container
+            #tab1.col.s12.tab-content
+              .row
+                .col.l5.m6.s12
+                  form(action="#").js_validate.align-center
+                    .input-field.required-field(data-error="Поле не заполнено")        
+                      span.label-field  ФИО    
+                      input(type="text",value="Гунтарь Олег Олегович",required)
+                    .input-field.required-field(data-error="Поле не заполнено")        
+                      span.label-field  Email    
+                      input(type="email",value="oleg.g@gmail.com",required,data-validate="email")
+                    .input-field.required-field(data-error="Поле не заполнено")        
+                      span.label-field  Телефон    
+                      input(type="tel",value="+380(67) 758 88 88",required,data-validate="phone")
+                    .input-field.required-field(data-error="Поле не заполнено")        
+                      span.label-field  Город    
+                      input(type="text",value="Харьков",required)
+                    .align-left
+                      a.change-pass(href="#change-pass").modal-trigger Изменить пароль
+                    br
+                    button(type="submit").btn.btn--black.waves-effect.waves-light Сохранить
+                .col.l7.m6.s12
+                  .tab-content-detail
+                    .currency
+                      | Курс доллар/гривна
+                      br
+                      span 27.100
+                    .cab-sale
+                      img(src="images/ico-13.svg", alt="")
+                      | Ваша скидка для товаров категории 
+                      b “Архитектурные плёнки”
+                      | составляет 
+                      br
+                      span.mark-txt 20%
+
+            #tab2.col.s12.tab-content
+              .row
+                .col.l6.m8.s12
+                  form(action="#").js_validate.align-center
+                    .row
+                      .addr-box.clearfix
+                        .addr-box-lnk
+                          
+                          a(href="#") Редактировать
+                          a(href="#") Удалить
+                        .col.l6.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Телефон    
+                            input(type="tel",value="+380(67) 758 88 88",required,data-validate="phone")
+                        .col.l6.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Город    
+                            input(type="text",value="Харьков",required)
+                        .col.l8.s12
+                          .input-field  
+                            span.label-field  Тип доставки
+                            select(name="")
+                              option(value="",disabled) Выберите способ доставки
+                              option(value="1",selected) Новая почта
+                              option(value="1") Авиалюкс
+                              option(value="1") Укрпочта
+                        .col.l4.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Отделение    
+                            input(type="text",value="21",required)
+                        .col.l12.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Улица    
+                            input(type="text",value="Киевская",required)
+                        .col.l12.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Дом    
+                            input(type="text",value="76",required)
+                        .col.l12.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Квартира    
+                            input(type="text",value="20",required)
+                      .addr-box.clearfix
+                        .addr-box-lnk
+                          
+                          a(href="#") Редактировать
+                          a(href="#") Удалить
+                        .col.l6.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Телефон    
+                            input(type="tel",value="+380(67) 758 88 88",required,data-validate="phone")
+                        .col.l6.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Город    
+                            input(type="text",value="Харьков",required)
+                        .col.l8.s12
+                          .input-field  
+                            span.label-field  Тип доставки
+                            select(name="")
+                              option(value="",disabled) Выберите способ доставки
+                              option(value="1",selected) Новая почта
+                              option(value="1") Авиалюкс
+                              option(value="1") Укрпочта
+                        .col.l4.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Отделение    
+                            input(type="text",value="21",required)
+                        .col.l12.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Улица    
+                            input(type="text",value="Киевская",required)
+                        .col.l12.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Дом    
+                            input(type="text",value="76",required)
+                        .col.l12.s12
+                          .input-field.required-field(data-error="Поле не заполнено")        
+                            span.label-field  Квартира    
+                            input(type="text",value="20",required)
+                      .align-left.col.l12.s12
+                        a(href="#add_address").add_address.modal-trigger Добавить ещё адрес +
+                      br
+                    button(type="submit").btn.btn--black.waves-effect.waves-light Сохранить
+            #tab3.col.s12.tab-content
+              .filter-orders
+                span Показать мои заказы 
+                | с
+                .datepicker-box
+                  input.datepicker(type='text',placeholder="дд/мм/гггг")
+                | по
+                .datepicker-box
+                  input.datepicker(type='text',placeholder="дд/мм/гггг")
+                a(href="#").reset-calendar.js_reset_day Сбросить дату
+              .order-item
+                .order-table-head
+                  .order-col.order-col--1
+                    | № Заказа
+                  .order-col.order-col--2
+                    | Дата
+                  .order-col.order-col--3
+                    | Товар
+
+                  .order-col.order-col--4
+                    | Цена за 1 пог. м.
+
+                  .order-col.order-col--5
+                    | Кол-во, пог. м.
+
+                  .order-col.order-col--6
+                    | Сумма
+                .order-table
+                  .order-table-cont
+                    .order-row
+                      .order-col.order-col--1 58258
+                      .order-col.order-col--2 15.12
+                      .order-col.order-col--3
+                        a(href="#") Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+
+                      .order-col.order-col--4
+                        | 200 грн
+
+                      .order-col.order-col--5
+                        | 1,20
+
+                      .order-col.order-col--6
+                        | 1000 грн
+                    .order-row
+                      .order-col.order-col--1
+                      .order-col.order-col--2
+                      .order-col.order-col--3
+                        a(href="#") Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+
+                      .order-col.order-col--4
+                        | 200 грн
+
+                      .order-col.order-col--5
+                        | 1,20
+
+                      .order-col.order-col--6
+                        | 1000 грн
+                    .order-row
+                      .order-col.order-col--1
+                      .order-col.order-col--2
+                      .order-col.order-col--3
+                        a(href="#") Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+
+                      .order-col.order-col--4
+                        | 200 грн
+
+                      .order-col.order-col--5
+                        | 1,20
+
+                      .order-col.order-col--6
+                        | 1000 грн
+                .order-table-footer
+                  .order-row
+                    .order-col.order-col--1
+                    .order-col.order-col--2.js_view_all_order
+                      span.icon-ico-11
+                    .order-col.order-col--3
+                      .status-order.status-order--err
+                        | Не оплачен
+                        a(href="#").btn.btn--red.waves-effect.waves-light
+                          | Оплатить
+                      .order-total-price.order-total-price--err
+                        | Итого:
+                        span 3000 грн
+              .order-item
+                .order-table
+                  .order-table-cont
+                    .order-row
+                      .order-col.order-col--1 58258
+                      .order-col.order-col--2 15.12
+                      .order-col.order-col--3
+                        a(href="#") Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+
+                      .order-col.order-col--4
+                        | 200 грн
+
+                      .order-col.order-col--5
+                        | 1,20
+
+                      .order-col.order-col--6
+                        | 1000 грн
+                .order-table-footer
+                  .order-row
+                    .order-col.order-col--1
+                    .order-col.order-col--2.js_view_all_order
+                      span.icon-ico-11
+                    .order-col.order-col--3
+                      .status-order.status-order--pass
+                        | оплачен
+                      .order-total-price
+                        | Итого:
+                        span 1000 грн
+              .order-item
+                .order-table
+                  .order-table-cont
+                    .order-row
+                      .order-col.order-col--1 58258
+                      .order-col.order-col--2 15.12
+                      .order-col.order-col--3
+                        a(href="#") Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+
+                      .order-col.order-col--4
+                        | 200 грн
+
+                      .order-col.order-col--5
+                        | 1,20
+
+                      .order-col.order-col--6
+                        | 1000 грн
+                    .order-row
+                      .order-col.order-col--1
+                      .order-col.order-col--2
+                      .order-col.order-col--3
+                        a(href="#") Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+
+                      .order-col.order-col--4
+                        | 200 грн
+
+                      .order-col.order-col--5
+                        | 1,20
+
+                      .order-col.order-col--6
+                        | 1000 грн
+                    .order-row
+                      .order-col.order-col--1
+                      .order-col.order-col--2
+                      .order-col.order-col--3
+                        a(href="#") Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+
+                      .order-col.order-col--4
+                        | 200 грн
+
+                      .order-col.order-col--5
+                        | 1,20
+
+                      .order-col.order-col--6
+                        | 1000 грн
+                    .order-row
+                      .order-col.order-col--1
+                      .order-col.order-col--2
+                      .order-col.order-col--3
+                        a(href="#") Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+
+                      .order-col.order-col--4
+                        | 200 грн
+
+                      .order-col.order-col--5
+                        | 1,20
+
+                      .order-col.order-col--6
+                        | 1000 грн
+                    .order-row
+                      .order-col.order-col--1
+                      .order-col.order-col--2
+                      .order-col.order-col--3
+                        a(href="#") Антигравийная прозрачная пленка 3М Venture Shield (USA) 0.61 m
+
+                      .order-col.order-col--4
+                        | 200 грн
+
+                      .order-col.order-col--5
+                        | 1,20
+
+                      .order-col.order-col--6
+                        | 1000 грн
+                .order-table-footer
+                  .order-row
+                    .order-col.order-col--1
+                    .order-col.order-col--2.js_view_all_order
+                      span.icon-ico-11
+                    .order-col.order-col--3
+                      .status-order.status-order--pass
+                        | оплачен
+                      .order-total-price
+                        | Итого:
+                        span 5000 грн
+      .above-footer
+    include _footer

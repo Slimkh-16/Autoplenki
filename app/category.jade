@@ -1,0 +1,424 @@
+doctype html
+html
+  head
+    include _head
+
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      style.
+        .preloader {display:none !important;}
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper.main-page
+      // header SECTION
+      include _header
+      // header SECTION
+      //page-heading
+      section.page-heading
+        .container
+          span Каталог
+      //breadcrumbs
+      section.breadcrumbs
+        .container
+          ul
+            li
+              a(href="#") Home
+            li
+              span Каталог
+      //info bar
+      section.infobar
+        .container
+          form(method='post', action='/')
+            .infobar__select-one
+              span.infobar__select-one-title Выбрать вид
+              .infobar__change
+                span.infobar__select-butt.view-list.active
+                  span.fa.fa-list
+                span.infobar__select-butt.view-table
+                  span.fa.fa-table
+            .infobar__select-one.form-field
+              span.infobar__select-one-title Показать на странице
+              select(name='select1')
+                option(value='', selected='') 10 items
+                option(value='') 20 items
+                option(value='') 30 items
+            .infobar__select-one.form-field
+              span.infobar__select-one-title Сортировать
+              select(name='select2')
+                option(value='', selected='') Last Added
+                option(value='') Цвет
+      //category-container
+      section.category-container.view-list
+        .container
+          .row
+            .col.l3.m4.s12.category-left
+              .heading-section.align-center
+                span Фильтр
+              .category-sidebar
+                form(action="#")
+                  
+                  .range-slider
+                    span.filter-head Цена
+                    #range1
+                  .filter-field.form-field
+                    span.filter-head Ширина пленки
+                    select
+                      option(value='', disabled='', selected='') Выберите пункт
+                      option(value='1') Option 1
+                      option(value='2') Option 2
+                      option(value='3') Option 3
+                  .filter-field.form-field
+                    span.filter-head Толщина пленки
+                    select
+                      option(value='', disabled='', selected='') Выберите пункт
+                      option(value='1') Option 1
+                      option(value='2') Option 2
+                      option(value='3') Option 3
+                  .filter-field.form-field
+                    span.filter-head Поверхность пленки
+                    select
+                      option(value='', disabled='', selected='') Выберите пункт
+                      option(value='1') Option 1
+                      option(value='2') Option 2
+                      option(value='3') Option 3
+                  .filter-field.form-field
+                    span.filter-head Наличие микроканалов
+                    select
+                      option(value='', disabled='', selected='') Выберите пункт
+                      option(value='1') Option 1
+                      option(value='2') Option 2
+                      option(value='3') Option 3
+                  .category-sidebar__bottom
+                    button(type="submit").btn.btn-orange.waves-effect.waves-light
+                      | Фильтровать
+                      span.fa.fa-angle-right
+                    br
+                    button(type="reset") Сбросить фильтры
+            .col.l9.m8.s12.category-right
+              .category-container-body
+                .category-one.animated(data-animation="InDown")
+                  .category-one__img
+                    img(src='assets/images/toyota.jpg', alt='toyota')
+                    span.category-one__status.category-one__status--premium PREMIUM
+                  .category-one__info
+                    .category-one__info-header
+                      span Toyota RAV4 Limited V6
+                    .row
+                      .col.l9.s12
+                        p In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+                        .row.category-one__char
+                          .col.s6
+                            ul
+                              li
+                                span Ширина:
+                                | Sedan
+                              li
+                                span Толщина:
+                                | 35,000 KM
+                              li
+                                span Мутров в рулоне:
+                                | 6-Speed Auto
+                          .col.s6
+                            ul
+                              li
+                                span Вид пленки:
+                                | Sedan
+                              li
+                                span Тип пленки:
+                                | 35,000 KM
+                              li
+                                span Производитель:
+                                | 6-Speed Auto
+                      .col.l3.s12
+                        .category-one__info-price
+                          span
+                            | 1092 грн. пог. м. 
+                          a.btn(href='#').waves-effect.waves-light
+                            | Подробнее
+                            span.fa.fa-angle-right
+                  .clearfix
+                  .category-one__info-bottom
+                    //- a.btn(href='#').waves-effect.waves-light
+                    //-   | В Вишлист
+                    //-   span.fa.fa-angle-right
+                    a.btn(href='#').waves-effect.waves-light
+                      | В Корзину
+                      span.fa.fa-angle-right
+                .category-one.animated(data-animation="InDown")
+                  .category-one__img
+                    img(src='assets/images/maxima.jpg', alt='toyota')
+                    span.category-one__status.category-one__status--premium PREMIUM
+                  .category-one__info
+                    .category-one__info-header
+                      span Toyota RAV4 Limited V6
+                    .row
+                      .col.l9.s12
+                        p
+                          | In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+                        .row.category-one__char
+                          .col.s6
+                            ul
+                              li
+                                span Ширина:
+                                | Sedan
+                              li
+                                span Толщина:
+                                | 35,000 KM
+                              li
+                                span Мутров в рулоне:
+                                | 6-Speed Auto
+                          .col.s6
+                            ul
+                              li
+                                span Вид пленки:
+                                | Sedan
+                              li
+                                span Тип пленки:
+                                | 35,000 KM
+                              li
+                                span Производитель:
+                                | 6-Speed Auto
+                      .col.l3.s12
+                        .category-one__info-price
+                          span
+                            | 1092 грн. пог. м. 
+                          a.btn(href='#').waves-effect.waves-light
+                            | Подробнее
+                            span.fa.fa-angle-right
+                  .clearfix
+                  .category-one__info-bottom
+                    //- a.btn(href='#').waves-effect.waves-light
+                    //-   | В Вишлист
+                    //-   span.fa.fa-angle-right
+                    a.btn(href='#').waves-effect.waves-light
+                      | В Корзину
+                      span.fa.fa-angle-right
+                .category-one.animated(data-animation="InDown")
+                  .category-one__img
+                    img(src='assets/images/mersList.jpg', alt='toyota')
+                    span.category-one__status.category-one__status--premium PREMIUM
+                  .category-one__info
+                    .category-one__info-header
+                      span Toyota RAV4 Limited V6
+                    .row
+                      .col.l9.s12
+                        p
+                          | In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+                        .row.category-one__char
+                          .col.s6
+                            ul
+                              li
+                                span Ширина:
+                                | Sedan
+                              li
+                                span Толщина:
+                                | 35,000 KM
+                              li
+                                span Мутров в рулоне:
+                                | 6-Speed Auto
+                          .col.s6
+                            ul
+                              li
+                                span Вид пленки:
+                                | Sedan
+                              li
+                                span Тип пленки:
+                                | 35,000 KM
+                              li
+                                span Производитель:
+                                | 6-Speed Auto
+                      .col.l3.s12
+                        .category-one__info-price
+                          span
+                            | 1092 грн. пог. м. 
+                          a.btn(href='#').waves-effect.waves-light
+                            | Подробнее
+                            span.fa.fa-angle-right
+                  .clearfix
+                  .category-one__info-bottom
+                    //- a.btn(href='#').waves-effect.waves-light
+                    //-   | В Вишлист
+                    //-   span.fa.fa-angle-right
+                    a.btn(href='#').waves-effect.waves-light
+                      | В Корзину
+                      span.fa.fa-angle-right
+                .category-one.animated(data-animation="InDown")
+                  .category-one__img
+                    img(src='assets/images/toyota.jpg', alt='toyota')
+                    span.category-one__status.category-one__status--premium PREMIUM
+                  .category-one__info
+                    .category-one__info-header
+                      span Toyota RAV4 Limited V6
+                    .row
+                      .col.l9.s12
+                        .category-one__info-txt In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+                        .row.category-one__char
+                          .col.s6
+                            ul
+                              li
+                                span Ширина:
+                                | Sedan
+                              li
+                                span Толщина:
+                                | 35,000 KM
+                              li
+                                span Мутров в рулоне:
+                                | 6-Speed Auto
+                          .col.s6
+                            ul
+                              li
+                                span Вид пленки:
+                                | Sedan
+                              li
+                                span Тип пленки:
+                                | 35,000 KM
+                              li
+                                span Производитель:
+                                | 6-Speed Auto
+                      .col.l3.s12
+                        .category-one__info-price
+                          span
+                            | 1092 грн. пог. м. 
+                          a.btn(href='#').waves-effect.waves-light
+                            | Подробнее
+                            span.fa.fa-angle-right
+                  .clearfix
+                  .category-one__info-bottom
+                    //- a.btn(href='#').waves-effect.waves-light
+                    //-   | В Вишлист
+                    //-   span.fa.fa-angle-right
+                    a.btn(href='#').waves-effect.waves-light
+                      | В Корзину
+                      span.fa.fa-angle-right
+                .category-one.animated(data-animation="InDown")
+                  .category-one__img
+                    img(src='assets/images/maxima.jpg', alt='toyota')
+                    span.category-one__status.category-one__status--premium PREMIUM
+                  .category-one__info
+                    .category-one__info-header
+                      span Toyota RAV4 Limited V6
+                    .row
+                      .col.l9.s12
+                        p
+                          | In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+                        .row.category-one__char
+                          .col.s6
+                            ul
+                              li
+                                span Ширина:
+                                | Sedan
+                              li
+                                span Толщина:
+                                | 35,000 KM
+                              li
+                                span Мутров в рулоне:
+                                | 6-Speed Auto
+                          .col.s6
+                            ul
+                              li
+                                span Вид пленки:
+                                | Sedan
+                              li
+                                span Тип пленки:
+                                | 35,000 KM
+                              li
+                                span Производитель:
+                                | 6-Speed Auto
+                      .col.l3.s12
+                        .category-one__info-price
+                          span
+                            | 1092 грн. пог. м. 
+                          a.btn(href='#').waves-effect.waves-light
+                            | Подробнее
+                            span.fa.fa-angle-right
+                  .clearfix
+                  .category-one__info-bottom
+                    //- a.btn(href='#').waves-effect.waves-light
+                    //-   | В Вишлист
+                    //-   span.fa.fa-angle-right
+                    a.btn(href='#').waves-effect.waves-light
+                      | В Корзину
+                      span.fa.fa-angle-right
+                .category-one.animated(data-animation="InDown")
+                  .category-one__img
+                    img(src='assets/images/mersList.jpg', alt='toyota')
+                    span.category-one__status.category-one__status--premium PREMIUM
+                  .category-one__info
+                    .category-one__info-header
+                      span Toyota RAV4 Limited V6
+                    .row
+                      .col.l9.s12
+                        p
+                          | In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+                        .row.category-one__char
+                          .col.s6
+                            ul
+                              li
+                                span Ширина:
+                                | Sedan
+                              li
+                                span Толщина:
+                                | 35,000 KM
+                              li
+                                span Мутров в рулоне:
+                                | 6-Speed Auto
+                          .col.s6
+                            ul
+                              li
+                                span Вид пленки:
+                                | Sedan
+                              li
+                                span Тип пленки:
+                                | 35,000 KM
+                              li
+                                span Производитель:
+                                | 6-Speed Auto
+                      .col.l3.s12
+                        .category-one__info-price
+                          span
+                            | 1092 грн. пог. м. 
+                          a.btn(href='#').waves-effect.waves-light
+                            | Подробнее
+                            span.fa.fa-angle-right
+                  .clearfix
+                  .category-one__info-bottom
+                    //- a.btn(href='#').waves-effect.waves-light
+                    //-   | В Вишлист
+                    //-   span.fa.fa-angle-right
+                    a.btn(href='#').waves-effect.waves-light
+                      | В Корзину
+                      span.fa.fa-angle-right
+                .pagination
+                  .pagination-cont
+                    a.pagination-left(href='#')
+                      span.fa.fa-angle-left
+                    ul
+                      li.active
+                        span 1
+                      li
+                        a(href="#") 2 
+                      li
+                        a(href="#") 3 
+                      li
+                        a(href="#") 4
+                    a.pagination-right(href='#')
+                      span.fa.fa-angle-right
+      .above-footer
+    include _footer

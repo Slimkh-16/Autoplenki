@@ -1,0 +1,69 @@
+$icon_font_name:"Icons";
+@font-face {
+	font-family:$icon_font_name;
+	src: url('fonts/Icons.eot');
+	src: url('fonts/Icons.eot?#iefix') format('eot'),
+	url('fonts/Icons.woff') format('woff'),
+	url('fonts/Icons.ttf') format('truetype'),
+	url('fonts/Icons.svg#Icons') format('svg');
+}
+[class*='icon-']:before{
+   font-family: $icon_font_name;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+
+.icon-00-logo:before {
+	content:'\E001';
+}
+.icon-ico-01:before {
+	content:'\E002';
+}
+.icon-ico-02:before {
+	content:'\E003';
+}
+.icon-ico-03:before {
+	content:'\E004';
+}
+.icon-ico-04:before {
+	content:'\E005';
+}
+.icon-ico-05:before {
+	content:'\E006';
+}
+.icon-ico-06:before {
+	content:'\E007';
+}
+.icon-ico-07:before {
+	content:'\E008';
+}
+.icon-ico-08:before {
+	content:'\E009';
+}
+.icon-ico-09:before {
+	content:'\E00A';
+}
+.icon-ico-10:before {
+	content:'\E00B';
+}
+.icon-ico-11:before {
+	content:'\E00C';
+}
+.icon-ico-12:before {
+	content:'\E00D';
+}
+.icon-ico-13:before {
+	content:'\E00E';
+}
+.icon-ico-14:before {
+	content:'\E00F';
+}
+.icon-ico-15:before {
+	content:'\E010';
+}
+.icon-ico-16:before {
+	content:'\E011';
+}

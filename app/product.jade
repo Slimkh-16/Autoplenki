@@ -1,0 +1,455 @@
+doctype html
+html
+  head
+    include _head
+
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      style.
+        .preloader {display:none !important;}
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper.main-page
+      // header SECTION
+      include _header
+      // header SECTION
+      //page-heading
+      section.page-heading
+        .container
+          span Каталог
+      //breadcrumbs
+      section.breadcrumbs
+        .container
+          ul
+            li
+              a(href="#") Home
+            li
+              span Каталог
+      //info bar
+      section.infobar
+        .container
+          .status-product
+            | PREMIUM LISTING
+          .infobar-btn
+            //- a(href="#").btn 
+            //-   | Добавить в избранное
+            //-   span.fa.fa-angle-right
+            a(href="#").btn 
+              | Добавить в корзину
+              span.fa.fa-angle-right
+      //product-page
+      section.product-page
+        .container
+          .product-page-top
+            .row
+              .col.l7.s12
+                .product-page-top__head 
+                  | Антигравийная прозрачная пленка SV Premium 2016
+                  br
+                  span
+                    span.enabled В наличии 
+                    | /
+                    span Оптом и в розницу
+              .col.l5.s12
+                .product-page-top__cart
+                  ul
+                    li
+                      span.prod_bl Количество: 
+                      .quantity-wrap
+                        span.minus-icon.fa.fa-caret-left
+                        input.quantity(type='text', value='1',placeholder="5.5")
+                        span.plus-icon.fa.fa-caret-right
+                        i пог. м.
+                      //- input(type="text" ,value="1.5").js_only_number 
+                      //- | м/пог
+                    li
+                      span.prod_bl Стоимость
+                      span.price 1092 грн
+                      span.old-price 1203 грн
+                  .align-left
+                    em Закажите 5 пог/м и сэкономьте 102 грн
+                    a(href="#",data-activates='drop2').dropdown-button.view-opt-price  Показать оптовые цены
+                    ul#drop2.dropdown-content
+                      li
+                        span 936/м.п при заказе от 10 м.п
+                      li
+                        span 936/м.п  при заказе от 10 м.п
+          .product-page-body
+            .row
+              .col.l8.s12
+                .product-one-slider
+                  .product-one-slider__img
+                    .swiper-container
+                      .swiper-wrapper
+                        .swiper-slide
+                          img(src='assets/images/big1.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/big2.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/big3.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/big4.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/big1.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/big2.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/big3.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/big4.jpg', alt='')
+                  .product-one-slider__thumb
+                    .swiper-container
+                      .swiper-wrapper
+                        .swiper-slide(data-slide="1").active
+                          img(src='assets/images/big1.jpg', alt='')
+                        .swiper-slide(data-slide="2")
+                          img(src='assets/images/big2.jpg', alt='')
+                        .swiper-slide(data-slide="3")
+                          img(src='assets/images/big3.jpg', alt='')
+                        .swiper-slide(data-slide="4")
+                          img(src='assets/images/big4.jpg', alt='')
+                        .swiper-slide(data-slide="5")
+                          img(src='assets/images/big1.jpg', alt='')
+                        .swiper-slide(data-slide="6")
+                          img(src='assets/images/big2.jpg', alt='')
+                        .swiper-slide(data-slide="7")
+                          img(src='assets/images/big3.jpg', alt='')
+                        .swiper-slide(data-slide="8")
+                          img(src='assets/images/big4.jpg', alt='')
+                    .swiper-button-prev
+                    .swiper-button-next
+                .product-one__txt 
+                  p The 2016 Nissan Maxima is powered by a 3.5-liter V6 engine with 300 horsepower, 10 more than the engine in the outgoing model. A continuously variable transmission and front-wheel drive are standard in all models. Nissan expects the 2016 Maxima to return 22/30 mpg city/highway, which is an improvement over the previous model's EPA-estimated 19/26 mpg.
+                  p The 2016 Nissan Maxima seats five and comes with a power-adjustable driver,seat, an eight-speaker audio system, Bluetooth, satellite radio, HD Radio, push-button start, a rearview camera, two USB ports, the NissanConnect infotainment system, navigation, an 8-inch color display screen and voice controls for phone, audio and navigation functions. Leather upholstery, heated and ventilated front seats, an 11-speaker Bose audio system, a 360-degree parking camera system, adaptive cruise control, blind spot warning, rear cross traffic alert, front and rear parking sensors and forward collision warning with automatic braking are available. The 2016 Nissan Maxima starts at $33,235 including destination fees.
+                .product-one__char
+                  .heading-section
+                    span EXTRA FEATURES
+                  .row
+                    .col.l4.m6.s12
+                      ul
+                        li
+                          span.fa.fa-check
+                          | Security System
+                        li
+                          span.fa.fa-check
+                          | Air Conditioning
+                        li
+                          span.fa.fa-check
+                          | Alloy Wheels
+                        li
+                          span.fa.fa-check
+                          | Anti-Lock Brakes (ABS)
+                        li
+                          span.fa.fa-check
+                          | Anti-Theft
+                        li
+                          span.fa.fa-check
+                          | Anti-Starter
+                    .col.l4.m6.s12
+                      ul
+                        li
+                          span.fa.fa-check
+                          | Dual Airbag
+                        li
+                          span.fa.fa-check
+                          | Intermittent Wipers
+                        li
+                          span.fa.fa-check
+                          | Keyless Entry
+                        li
+                          span.fa.fa-check
+                          | Power Mirrors
+                        li
+                          span.fa.fa-check
+                          | Power Seat
+                        li
+                          span.fa.fa-check
+                          | Power Steering
+                    .col.l4.m6.s12
+                      ul
+                        li
+                          span.fa.fa-check
+                          | CD Player
+                        li
+                          span.fa.fa-check
+                          | Driver Side Airbag
+                        li
+                          span.fa.fa-check
+                          | Power Windows
+                        li
+                          span.fa.fa-check
+                          | Remote Start
+              .col.l4.s12
+                .product-char
+                  .heading-section
+                    span DESCRIPTION
+                  ul
+                    li
+                      span.product-char__col Make
+                      span.product-char__col Nissan
+                    li
+                      span.product-char__col Make
+                      span.product-char__col Nissan
+                    li
+                      span.product-char__col Make
+                      span.product-char__col Nissan
+                    li
+                      span.product-char__col Make
+                      span.product-char__col Nissan
+                    li
+                      span.product-char__col Make
+                      span.product-char__col Nissan
+                    li
+                      span.product-char__col Make
+                      span.product-char__col Nissan
+                    li
+                      span.product-char__col Make
+                      span.product-char__col Nissan
+                    li
+                      span.product-char__col Make
+                      span.product-char__col Nissan
+                    li
+                      span.product-char__col Make
+                      span.product-char__col Nissan
+                    li
+                      span.product-char__col Make
+                      span.product-char__col Nissan
+                .product-one-aside-about
+                  .heading-section
+                    span Задать вопрос
+                  .product-one__main-aside-about-call
+                    span.fa.fa-phone
+                    span.about-call-phone 1-888-378-4027
+                    p Call the seller 24/7 and they would help you.
+                  .product-one__main-aside-about-form
+                    form(action='/', method='post').js_validate
+                      .input-field.required-field(data-error="Поле не заполнено")        
+                        span.label-field  ФИО    
+                        input(type="text",required)
+                      .input-field.required-field(data-error="Поле не заполнено")        
+                        span.label-field  Email    
+                        input(type="email",required,data-validate="email")
+                      .input-field.required-field(data-error="Поле не заполнено")        
+                        span.label-field  MESSAGE    
+                        textarea(name='text', placeholder='', required='').materialize-textarea
+                      button.btn.btn--black(type='submit')
+                        | SEND MESSAGE
+              .col.l12.s12
+      //other product
+      section.other-product
+        .container
+          .other-product__head FIND OUT MORE
+          .nav__tab
+            ul.tabs
+              li.tab
+                a.active(href='#tab1') Сопутствующие товары
+              li.tab
+                a(href='#tab2') Подобные товары
+          #tab1.tab-content
+            .hit-item.animated(data-animation="InDown",data-animation-delay="100") 
+              a(href='#')
+                span.hit-item__img
+                  img(src='http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg', alt='')
+                span.hit-item__info
+                  span.hit-item__price 101.25$
+                  br
+                  | Антигравийная пленка №567496
+                  .hit-item__detail Lorem Ipsum is simply dummy text of the printing and typesetting 
+            .hit-item.animated(data-animation="InDown",data-animation-delay="200") 
+              a(href='#')
+                span.hit-item__img
+                  img(src='http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg', alt='')
+                span.hit-item__info
+                  span.hit-item__price 101.25$
+                  br
+                  | Антигравийная пленка №567496
+                  .hit-item__detail Lorem Ipsum is simply dummy text of the printing and typesetting 
+            .hit-item.animated(data-animation="InDown",data-animation-delay="300") 
+              a(href='#')
+                span.hit-item__img
+                  img(src='http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg', alt='')
+                span.hit-item__info
+                  span.hit-item__price 101.25$
+                  br
+                  | Антигравийная пленка №567496
+                  .hit-item__detail Lorem Ipsum is simply dummy text of the printing and typesetting 
+            .hit-item.animated(data-animation="InDown",data-animation-delay="400") 
+              a(href='#')
+                span.hit-item__img
+                  img(src='http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg', alt='')
+                span.hit-item__info
+                  span.hit-item__price 101.25$
+                  br
+                  | Антигравийная пленка №567496
+                  .hit-item__detail Lorem Ipsum is simply dummy text of the printing and typesetting 
+          #tab2.tab-content
+            .hit-item.animated(data-animation="InDown",data-animation-delay="100") 
+              a(href='#')
+                span.hit-item__img
+                  img(src='http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg', alt='')
+                span.hit-item__info
+                  span.hit-item__price 1012.25$
+                  br
+                  | Антигравийная пленка №567496
+                  .hit-item__detail Lorem Ipsum is simply dummy text of the printing and typesetting 
+            .hit-item.animated(data-animation="InDown",data-animation-delay="200") 
+              a(href='#')
+                span.hit-item__img
+                  img(src='http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg', alt='')
+                span.hit-item__info
+                  span.hit-item__price 1012.25$
+                  br
+                  | Антигравийная пленка №567496
+                  .hit-item__detail Lorem Ipsum is simply dummy text of the printing and typesetting 
+            .hit-item.animated(data-animation="InDown",data-animation-delay="300") 
+              a(href='#')
+                span.hit-item__img
+                  img(src='http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg', alt='')
+                span.hit-item__info
+                  span.hit-item__price 1012.25$
+                  br
+                  | Антигравийная пленка №567496
+                  .hit-item__detail Lorem Ipsum is simply dummy text of the printing and typesetting 
+            .hit-item.animated(data-animation="InDown",data-animation-delay="400") 
+              a(href='#')
+                span.hit-item__img
+                  img(src='http://html.templines.com/sokolcov/auto-club/media/186x113/audi.jpg', alt='')
+                span.hit-item__info
+                  span.hit-item__price 1012.25$
+                  br
+                  | Антигравийная пленка №567496
+                  .hit-item__detail Lorem Ipsum is simply dummy text of the printing and typesetting 
+      // testimonials
+      section.testimonials.testimonials--product
+        .container
+          .heading-section.align-center
+            span Отзывы
+          .nav__tab
+            ul.tabs
+              li.tab
+                a.active(href='#tab-tst1') Отзывы (2)
+              li.tab
+                a(href='#tab-tst2') Оставить отзыв
+          #tab-tst1.tab-content
+            .testimonials-item.align-center.animated(data-animation="InDown")
+              .testimonials-item__person
+                img(src="assets/images/peop.jpg", alt="")
+              .testimonials-item__head
+                span Павлик Екатерина
+                .testimonials-item_rating.star-ratings.align-center
+                  .stars.stars-example-fontawesome 
+                    select.rating
+                      option(value='1') 1
+                      option(value='2',selected="") 2
+                      option(value='3') 3
+                      option(value='4') 4
+                      option(value='5') 5
+              p
+                | Donec facilisis velit eust. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequsem
+                | velde metus imperdiet lacinia.  Nam rutrum congue diam. Vestibulum acda risus eros auctor egestas. Morbids sem magna, viverra quis sollicitudin quis consectetuer quis nec magna.
+            .testimonials-item.align-center.animated(data-animation="InDown")
+              .testimonials-item__person
+                img(src="assets/images/peop.jpg", alt="")
+              .testimonials-item__head
+                span Павлик Екатерина
+                .testimonials-item_rating.star-ratings.align-center
+                  .stars.stars-example-fontawesome 
+                    select.rating
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+                      option(value='4') 4
+                      option(value='5',selected="") 5
+              p
+                | Donec facilisis velit eust. Phasellus cons quat. Aenean vitae quam. Vivamus et nunc. Nunc consequsem
+                | velde metus imperdiet lacinia.  Nam rutrum congue diam. Vestibulum acda risus eros auctor egestas. Morbids sem magna, viverra quis sollicitudin quis consectetuer quis nec magna.
+          #tab-tst2.tab-content
+            .product-one__main-aside-about-form
+              .heading-section.align-center
+                span Оставить отзыв
+              form.js_validate(action='/', method='post')
+                .input-field.required-field(data-error="Поле не заполнено")        
+                  span.label-field  ФИО    
+                  input(type="text",,required)
+                .input-field.required-field(data-error="Поле не заполнено")        
+                  span.label-field  Email    
+                  input(type="email",required,data-validate="email")
+                .input-field.required-field(data-error="Поле не заполнено")        
+                  span.label-field  MESSAGE    
+                  textarea(name='text', placeholder='', required='').materialize-textarea
+
+                .testimonials-item_rating.star-ratings.align-left
+                  .stars.stars-example-fontawesome 
+                    select.rating
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+                      option(value='4') 4
+                      option(value='5') 5
+                button.btn.btn-orange(type='submit')
+                  | Оставить отзыв
+                  span.fa.fa-angle-right
+      //brands section
+      section.brands.animated(data-animation="InDown")
+        .container
+          .heading-section.align-center
+            span Брэнды
+          .brand-row
+            .brands-slider.swiper-container
+              .swiper-wrapper
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+                .swiper-slide
+                  .brand-item
+                    img(src="assets/images/bmwLogo.png", alt="")
+              .swiper-pagination
+      .above-footer
+    include _footer

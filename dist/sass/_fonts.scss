@@ -1,0 +1,51 @@
+/*--------- font-face ---------*/
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('fonts/opensans-light.eot');
+    src: url('fonts/opensans-light.eot') format('embedded-opentype'),
+         url('fonts/opensans-light.woff') format('woff'),
+         url('fonts/opensans-light.ttf') format('truetype'),
+         url('fonts/opensans-light.svg#OpenSans-Light') format('svg');
+}
+@font-face {
+    font-family: 'OpenSans-LightItalic';
+    src: url('fonts/OpenSans-LightItalict.eot');
+    src: url('fonts/OpenSans-LightItalic.eot') format('embedded-opentype'),
+         url('fonts/OpenSans-LightItalic.woff') format('woff'),
+         url('fonts/OpenSans-LightItalic.ttf') format('truetype'),
+         url('fonts/OpenSans-LightItalic.svg#OpenSans-LightItalic') format('svg');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('fonts/opensans-bold.eot');
+    src: url('fonts/opensans-bold.eot') format('embedded-opentype'),
+         url('fonts/opensans-bold.woff') format('woff'),
+         url('fonts/opensans-bold.ttf') format('truetype'),
+         url('fonts/opensans-bold.svg#opensans-bold') format('svg');
+}
+@font-face {
+    font-family: 'OpenSans-BoldItalic';
+    src: url('fonts/OpenSans-BoldItalic.eot');
+    src: url('fonts/OpenSans-BoldItalic.eot') format('embedded-opentype'),
+         url('fonts/OpenSans-BoldItalic.woff') format('woff'),
+         url('fonts/OpenSans-BoldItalic.ttf') format('truetype'),
+         url('fonts/OpenSans-BoldItalic.svg#OpenSans-BoldItalic') format('svg');
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),  
+  url('fonts/OpenSans-Semibold.woff') format('woff'), 
+  url('fonts/OpenSans-Semibold.ttf')  format('truetype'), 
+  url('fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans.eot?#iefix') format('embedded-opentype'),  
+  url('fonts/OpenSans.woff') format('woff'), 
+  url('fonts/OpenSans.ttf')  format('truetype'), 
+  url('fonts/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

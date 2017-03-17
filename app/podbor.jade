@@ -1,0 +1,218 @@
+doctype html
+html
+  head
+    include _head
+
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      style.
+        .preloader {display:none !important;}
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper.main-page
+      // header SECTION
+      include _header
+      // header SECTION
+      //page-heading
+      section.page-heading(style="background:url(assets/images/heading2.jpg) 50% 50% no-repeat")
+        .container
+          span Подбор плёнки для: Acura  MDX 2016
+      //breadcrumbs
+      section.breadcrumbs
+        .container
+          ul
+            li
+              a(href="#") Home
+            li
+              span Подбор плёнки
+      //change-product-page
+      section.change-product-page
+        .container
+          .change-product-top В таблице ниже Вы найдете стоимость полиуретановой пленки и стоимость услуги (пленка + работа) по нанесению пленки на разные части автомобиля.
+          .change-product-table
+            .change-product__top-image
+              img(src="assets/images/ch1.jpg", alt="")
+              img(src="assets/images/ch2.jpg", alt="")
+            .change-product-over
+              table
+                thead
+                  tr.bg-gr
+                    td 
+                    td 
+                      span 3mVentureshield
+                    td 
+                      span PREMIUMSHIELD ELITE
+                    td 
+                      span SUNTEK
+                    td 
+                      span CLEARSHIELD PRO
+                tbody
+                  tr
+                    td(rowspan="2") 
+                      span.nmn Стандарт Частичный
+                    td
+                      span(data-price="100")  100 $
+                    td
+                      span(data-price="200") 200 $
+                    td
+                      span(data-price="300") 300 $
+                    td
+                      span(data-price="100") 100 $
+                  tr
+                    td 
+                      span.old 300 $
+                    td 
+                      span.old 300 $
+                    td 
+                      span.old 300 $
+                    td 
+                      span.old 300 $
+                tbody
+                  tr.bg-gr
+                    td(rowspan="2") 
+                      span.nmn Бампер, Фары, Зеркала, Ручки
+                    td
+                      span(data-price="100") 100 $
+                    td
+                      span(data-price="100") 100 $
+                    td
+                      span(data-price="100") 100 $
+                    td
+                      span(data-price="100") 100 $
+                  tr.bg-gr
+                    td 
+                      span.old 30 $
+                    td 
+                      span.old 30 $
+                    td 
+                      span.old 30 $
+                    td 
+                      span.old 30 $
+                tbody
+                  tr
+                    td(rowspan="2")
+                      span.nmn Капот полностью
+                    td
+                      span(data-price="100") 100 $
+                    td
+                      span(data-price="100") 100 $
+                    td
+                      span(data-price="100") 100 $
+                    td
+                      span(data-price="100") 100 $
+                  tr
+                    td 
+                      span.old 300 $
+                    td 
+                      span.old 300 $
+                    td 
+                      span.old 300 $
+                    td 
+                      span.old 300 $
+                tbody
+                  tr.bg-gr
+                    td(rowspan="2")
+                      span.nmn Крылья полностью
+                    td
+                      span(data-price="100") 100 $
+                    td
+                      span(data-price="100") 100 $
+                    td
+                      span(data-price="100") 100 $
+                    td
+                      span(data-price="100") 100 $
+                  tr.bg-gr
+                    td 
+                      span.old 300 $
+                    td 
+                      span.old 300 $
+                    td 
+                      span.old 300 $
+                    td 
+                      span.old 300 $
+                tfoot
+                  tr
+                    td(colspan="3")
+                    td(colspan="2")
+                      span.ch-pr-t 
+                        | Всего:
+                        span.js_total 0 
+                        | $
+                      a(href="#").btn.btn--black
+                        | В Корзину
+      //podbor
+      section.podbor
+        .container
+          .search-box-container.animated(data-animation="InDown")
+            .row
+              .col.l5.s12
+                .search-box__left
+                  .search-form__head Новые автопленки
+                  .search-box-item
+                    a(href="#")
+                      span.search-box-item__img
+                        img(src="http://placehold.it/150x80", alt="")
+                      span.search-box-item__info
+                        | Выкройка 1
+                  .search-box-item
+                    a(href="#")
+                      span.search-box-item__img
+                        img(src="http://placehold.it/150x80", alt="")
+                      span.search-box-item__info
+                        | Выкройка 2
+                  .search-box-item
+                    a(href="#")
+                      span.search-box-item__img
+                        img(src="http://placehold.it/150x80", alt="")
+                      span.search-box-item__info
+                        | Выкройка 3
+                  .align-left.clearfix
+                    a(href="#").search-box__view-all
+                      span.fa.fa-arrow-right
+                      | Смотреть все
+              .col.l7.s12
+
+                .search-form__head Подобрать комплект автопленок
+                form(action="#").search-form.form
+                  p Выберите параметры автомобиля:
+                  .form-field
+                    select.js_change_images
+                      option(value='', disabled='', selected='') Выберите производителя
+                      option(value='1',data-image-category="http://html.templines.com/sokolcov/auto-club/media/270x150/bmw.jpg") Option 1
+                      option(value='2',data-image-category="http://html.templines.com/sokolcov/auto-club/media/270x150/LandRover.jpg") Option 2
+                      option(value='3',data-image-category="http://html.templines.com/sokolcov/auto-club/media/270x150/nissanGT.jpg") Option 3
+                  .form-field
+                    select
+                      option(value='', disabled='', selected='') Выберите модель
+                      option(value='1') Option 1
+                      option(value='2') Option 2
+                      option(value='3') Option 3
+                  .form-field
+                    select
+                      option(value='', disabled='', selected='') Выберите год
+                      option(value='1') Option 1
+                      option(value='2') Option 2
+                      option(value='3') Option 3
+                  button(type="submit").btn.btn--black
+                    | Подобрать
+                .search-form-images
+                  img(src="assets/images/img.jpg", alt="").js_prew_images
+      .above-footer
+    include _footer

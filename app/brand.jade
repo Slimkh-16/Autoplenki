@@ -1,0 +1,84 @@
+doctype html
+html
+  head
+    include _head
+
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      style.
+        .preloader {display:none !important;}
+      div
+        strong For full functionality of this site it is necessary to enable JavaScript. Download the update here 
+        a(href="http://enable-javascript.com")
+          | enable-javascript.com
+      
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    // wrapper start
+    .wrapper.main-page
+      // header SECTION
+      include _header
+      // header SECTION
+      //page-heading
+      section.page-heading
+        .container
+          span Брэнд
+      //breadcrumbs
+      section.breadcrumbs
+        .container
+          ul
+            li
+              a(href="#") Home
+            li
+              span Брэнд
+      //catalog-container
+      section.catalog-container
+        .container
+          .brand-txt
+            span Brand #1
+            | In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the SilveradoIn a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the SilveradoIn a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the SilveradoIn a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+        .container
+          .row.catalog-container-row
+            .col.l4.m6.s12.catalog-container-item.animated(data-animation="InDown")
+              a(href="#")
+                span.catalog-container-item__img
+                  img(src="assets/images/blog.jpg", alt="")
+                span.catalog-container-item__name
+                  span Антигравийная пленка
+                span.category-one__info-price
+                  span 1092 грн. пог. м. 
+                span.catalog-container-item__info
+                  | In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+            .col.l4.m6.s12.catalog-container-item.animated(data-animation="InDown")
+              a(href="#")
+                span.catalog-container-item__img
+                  img(src="assets/images/blog.jpg", alt="")
+                span.catalog-container-item__name
+                  span Антигравийная пленка
+                span.category-one__info-price
+                  span 1092 грн. пог. м. 
+                span.catalog-container-item__info
+                  | In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+            .col.l4.m6.s12.catalog-container-item.animated(data-animation="InDown")
+              a(href="#")
+                span.catalog-container-item__img
+                  img(src="assets/images/blog.jpg", alt="")
+                span.catalog-container-item__name
+                  span Антигравийная пленка
+                span.category-one__info-price
+                  span 1092 грн. пог. м. 
+                span.catalog-container-item__info
+                  | In a pickup market gone fancy, the Silverado sticks to its basic-truck recipe. The steering is accurate, and the Silverado
+      .above-footer
+    include _footer
