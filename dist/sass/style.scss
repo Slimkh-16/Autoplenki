@@ -2259,7 +2259,8 @@ h5 {
       }
       td:first-child {
         background: none !important;
-        border-color:transparent !important;
+        border-top-color:transparent !important;
+        border-left-color:transparent !important;
       }
     }
     tbody:hover >tr td {
@@ -3788,6 +3789,19 @@ h5 {
   &:hover {
     color: $t;
     text-decoration: underline;
+  }
+}
+.change-product__top-image {
+  height: 300px;
+  padding: 40px;
+  text-align: center;
+  svg {
+    display: inline-block;
+    [data-area] {
+      fill-opacity: 0;
+      @include anim;
+      &.active {fill-opacity: 1;}
+    }
   }
 }
 @media only screen and (max-width: 1600px) {

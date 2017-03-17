@@ -88,6 +88,15 @@
       }
       this.goToTop();
       this.searchFunction();
+      //podborFunction
+      this.podborFunction();
+    },
+    podborFunction: function(){
+      $('.change-product-over tbody').on('mousemove',function(){
+        var thisArea = $(this).attr('data-area');
+        $('.change-product__top-image [data-area]').attr('class','');
+        $('.change-product__top-image [data-area="' + thisArea + '"]').attr('class','active');
+      });
     },
     searchFunction: function(){
       function onFocus() {

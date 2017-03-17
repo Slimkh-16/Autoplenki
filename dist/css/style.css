@@ -2500,7 +2500,8 @@ h5 {
       cursor: default !important; }
     .change-product-over table thead td:first-child {
       background: none !important;
-      border-color: transparent !important; }
+      border-top-color: transparent !important;
+      border-left-color: transparent !important; }
     .change-product-over table tbody:hover > tr td {
       background: #afafaf !important; }
     .change-product-over table thead td, .change-product-over table tbody td {
@@ -3941,6 +3942,19 @@ h5 {
   .on-map:hover {
     color: #333333;
     text-decoration: underline; }
+
+.change-product__top-image {
+  height: 300px;
+  padding: 40px;
+  text-align: center; }
+  .change-product__top-image svg {
+    display: inline-block; }
+    .change-product__top-image svg [data-area] {
+      fill-opacity: 0;
+      -webkit-transition: all .4s ease-out;
+      transition: all .4s ease-out; }
+      .change-product__top-image svg [data-area].active {
+        fill-opacity: 1; }
 
 @media only screen and (max-width: 1600px) {
   .found-page {
