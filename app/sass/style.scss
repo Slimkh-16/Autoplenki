@@ -844,8 +844,17 @@ h5 {
 }
 .category-nav {
   display: block;
+  .indicator {display: none !important;}
   ul {
+    display: block;
+    white-space: normal;
+    height: auto;
+    min-height: 1px;
+    overflow: hidden;
     li {
+      border:none;
+      height: auto;
+      min-height: 1px;
       display: block;
       list-style: none;
       text-align: left;
@@ -858,25 +867,26 @@ h5 {
       &:last-child {
         border-bottom: 1px solid #eeeeee;
       }
-      &:before {
-        content: '';
-        border-left: 4px solid #dddddd;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        height: 20px;
-        margin-top: -6px;
-        @include anim;
-      }
-      &.active:before,&:hover:before {
-        border-left: 4px solid $th;
-      }
+
       a,span:not(.fa) {
         font: 600 13px 'Open Sans',sans-serif;
         text-transform: uppercase;
         padding: 20px 30px 15px 20px;
         display: block;
         @include anim;
+        &:before {
+          content: '';
+          border-left: 4px solid #dddddd;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          height: 20px;
+          margin-top: -8px;
+          @include anim;
+        }
+        &.active:before,&:hover:before {
+          border-left: 4px solid $th;
+        }
       }
       a:hover,&:focus,&.active span:not(.fa){
         color: $th;
@@ -3804,6 +3814,7 @@ h5 {
     }
   }
 }
+
 @media only screen and (max-width: 1600px) {
   // .general-slider-caption {
   //   left: calc(100% - 1320px);

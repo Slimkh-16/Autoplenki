@@ -301,50 +301,65 @@ html
           .row
             .col.l3.m4.s5.animated(data-animation="InLeft")
               .category-nav
-                ul
-                  li.active
-                    span Категория
-                    span.fa.fa-angle-right
-                  li
-                    a(href='#') Категория 2
-                  li
-                    a(href='#') Категория 3
-                  li
-                    a(href='#') Категория 4
-                  li
-                    a(href='#') Категория 5
-                  li
-                    a(href='#') Категория 6
-                  li
-                    a(href='#') Категория 7
-                  li
-                    a(href='#') Категория 8
+                ul.tabs
+                  li.tab
+                    a(href='#tab1') Категория 1
+                  li.tab
+                    a(href='#tab2') Категория 2
+                  li.tab
+                    a(href='#tab3') Категория 3
+                  li.tab
+                    a(href='#tab4') Категория 4
+                  li.tab
+                    a(href='#tab5') Категория 5
+                  li.tab
+                    a(href='#tab6') Категория 6
+                  li.tab
+                    a(href='#tab7') Категория 7
+                  li.tab
+                    a(href='#tab8') Категория 8
             .col.l9.m8.s7.animated(data-animation="InRight")
               .category-body
-                a(href="#").category-item
-                  span.category-item__img
-                    img(src="assets/images/blog.jpg", alt="")
-                  span Антигравийная плёнка
-                a(href="#").category-item
-                  span.category-item__img
-                    img(src="assets/images/blog.jpg", alt="")
-                  span Виниловая плёнка
-                a(href="#").category-item
-                  span.category-item__img
-                    img(src="assets/images/blog.jpg", alt="")
-                  span Плёнка для тонировки стёкол
-                a(href="#").category-item
-                  span.category-item__img
-                    img(src="assets/images/blog.jpg", alt="")
-                  span Антигравийная плёнка
-                a(href="#").category-item
-                  span.category-item__img
-                    img(src="assets/images/blog.jpg", alt="")
-                  span Виниловая плёнка
-                a(href="#").category-item
-                  span.category-item__img
-                    img(src="assets/images/blog.jpg", alt="")
-                  span Плёнка для тонировки стёкол
+                #tab1.tab-body
+                  a(href="#").category-item
+                    span.category-item__img
+                      img(src="assets/images/blog.jpg", alt="")
+                    span Антигравийная плёнка
+                  a(href="#").category-item
+                    span.category-item__img
+                      img(src="assets/images/blog.jpg", alt="")
+                    span Виниловая плёнка
+                  a(href="#").category-item
+                    span.category-item__img
+                      img(src="assets/images/blog.jpg", alt="")
+                    span Плёнка для тонировки стёкол
+                  a(href="#").category-item
+                    span.category-item__img
+                      img(src="assets/images/blog.jpg", alt="")
+                    span Антигравийная плёнка
+                  a(href="#").category-item
+                    span.category-item__img
+                      img(src="assets/images/blog.jpg", alt="")
+                    span Виниловая плёнка
+                  a(href="#").category-item
+                    span.category-item__img
+                      img(src="assets/images/blog.jpg", alt="")
+                    span Плёнка для тонировки стёкол
+
+                #tab2.tab-body 
+                  span(style="font-size:16px;line-height:20px;") tab2
+                #tab3.tab-body 
+                  span(style="font-size:16px;line-height:20px;") tab3
+                #tab4.tab-body 
+                  span(style="font-size:16px;line-height:20px;") tab4
+                #tab5.tab-body 
+                  span(style="font-size:16px;line-height:20px;") tab5
+                #tab6.tab-body 
+                  span(style="font-size:16px;line-height:20px;") tab6
+                #tab7.tab-body 
+                  span(style="font-size:16px;line-height:20px;") tab7
+                #tab8.tab-body 
+                  span(style="font-size:16px;line-height:20px;") tab8
       //our plus
       section.our-plus.animated(data-animation="InDown")
         .contfiner
